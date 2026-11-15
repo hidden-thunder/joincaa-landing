@@ -4,40 +4,22 @@
     "ignoreFiles": [],
     "ignoreValues": [
       {
-        "rule": "repeating-stripes-gradient",
+        "rule": "gradient-text",
         "value": "*",
         "files": [
           "html/css/style.css"
         ],
-        "createdAt": "2026-11-15T04:25:44.071Z",
-        "reason": "user chose Varsity Recruiting direction: knit rib cuff stripes are the world's signature material"
+        "createdAt": "2026-11-15T05:04:31.366Z",
+        "reason": "model triage: storefront direction chosen by user; gilded letters are a raster gold-leaf tile clipped to text plus a one-time glint, the world's signature material"
       },
       {
-        "rule": "dark-glow",
-        "value": "*",
-        "files": [
-          "html/css/style.css"
-        ],
-        "createdAt": "2026-11-15T04:25:44.079Z",
-        "reason": "model triage: zero-blur spread rings on sewn patches are stitched borders, not glow; shadows carry offset+blur"
-      },
-      {
-        "rule": "repeating-stripes-gradient",
+        "rule": "gradient-text",
         "value": "*",
         "files": [
           "html/index.html"
         ],
-        "createdAt": "2026-11-15T04:25:48.369Z",
-        "reason": "user chose Varsity Recruiting direction: knit rib cuff stripes are the world's signature material"
-      },
-      {
-        "rule": "dark-glow",
-        "value": "*",
-        "files": [
-          "html/index.html"
-        ],
-        "createdAt": "2026-11-15T04:25:48.377Z",
-        "reason": "model triage: zero-blur spread rings on sewn patches are stitched borders, not glow"
+        "createdAt": "2026-11-15T05:06:41.692Z",
+        "reason": "model triage: storefront direction; gilded letters are a raster gold-leaf tile clipped to text plus a one-time glint, the world's signature material"
       }
     ]
   }

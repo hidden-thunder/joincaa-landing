@@ -1,46 +1,58 @@
 ---
 name: CAA Careers
-description: Varsity recruiting in navy wool felt, two-layer twill lettering, sewn patches and a roster sheet.
+description: A lit storefront window at night. Gold-leaf sign lettering on dark glass, an "Apply within" card hung inside, and porcelain enamel plates for the details.
 colors:
+  glass: "#0b1626"
+  glass-2: "#10213a"
+  glass-deep: "#08111e"
   navy: "#14365b"
-  navy-deep: "#0d2540"
-  navy-ink: "#0a1c31"
   red: "#b62126"
   red-deep: "#8f1a1e"
-  red-bright: "#e0474c"
-  wool: "#f4f4f1"
-  heather: "#dfe2e6"
-  paper: "#fdfdfb"
-  rule: "#c7d3e2"
-  ink: "#10243b"
-  ink-soft: "#3d5168"
-  on-felt: "#f4f4f1"
-  on-felt-soft: "#c8d3e1"
-  success: "#1d7a4a"
+  shade: "#4a0d10"
+  gold: "#d6a94f"
+  gold-light: "#f2d995"
+  gold-dim: "#9c7a36"
+  enamel: "#f7f6f2"
+  card: "#fdfdfc"
+  rule: "#cfd6e0"
+  ink: "#142338"
+  ink-soft: "#44536a"
+  on-glass: "#eef1f5"
+  on-glass-soft: "#b9c5d4"
+  error-wash: "#fdf1f1"
 typography:
   display:
-    fontFamily: "Graduate, Rockwell, serif"
-    fontSize: "clamp(2.6rem, 6.2vw, 5.75rem)"
+    fontFamily: "Ultra, Rockwell Extra Bold, serif"
+    fontSize: "clamp(2.5rem, 5.4vw, 4.75rem)"
     fontWeight: 400
-    lineHeight: 1.02
-    letterSpacing: "0.03em"
-  numeral:
-    fontFamily: "Graduate, Rockwell, serif"
-    fontSize: "clamp(4.5rem, 8vw, 6rem)"
-    fontWeight: 400
-    lineHeight: 0.95
-    letterSpacing: "0.03em"
+    lineHeight: 1.08
+    letterSpacing: "0.01em"
   headline:
-    fontFamily: "Graduate, Rockwell, serif"
+    fontFamily: "Ultra, Rockwell Extra Bold, serif"
     fontSize: "clamp(2.125rem, 4.6vw, 3.75rem)"
     fontWeight: 400
-    lineHeight: 1.06
-    letterSpacing: "0.03em"
+    lineHeight: 1.08
+    letterSpacing: "0.01em"
   title:
-    fontFamily: "Graduate, Rockwell, serif"
-    fontSize: "1.5rem"
+    fontFamily: "Ultra, Rockwell Extra Bold, serif"
+    fontSize: "clamp(1.75rem, 3.4vw, 2.75rem)"
     fontWeight: 400
     lineHeight: 1.1
+  title-sm:
+    fontFamily: "Ultra, Rockwell Extra Bold, serif"
+    fontSize: "clamp(1.375rem, 2vw, 1.75rem)"
+    fontWeight: 400
+    lineHeight: 1.1
+  script:
+    fontFamily: "Yellowtail, cursive"
+    fontSize: "clamp(2.5rem, 4vw, 3rem)"
+    fontWeight: 400
+    lineHeight: 1
+  lead:
+    fontFamily: "Barlow, system-ui, sans-serif"
+    fontSize: "clamp(1.0625rem, 1.4vw, 1.25rem)"
+    fontWeight: 400
+    lineHeight: 1.55
   body:
     fontFamily: "Barlow, system-ui, sans-serif"
     fontSize: "1.0625rem"
@@ -50,240 +62,251 @@ typography:
     fontFamily: "Barlow Condensed, Barlow, system-ui, sans-serif"
     fontSize: "0.875rem"
     fontWeight: 700
+    lineHeight: 1.2
     letterSpacing: "0.08em"
-  checklist:
+  button:
     fontFamily: "Barlow Condensed, Barlow, system-ui, sans-serif"
-    fontSize: "1.125rem"
+    fontSize: "1.0625rem"
     fontWeight: 700
-    letterSpacing: "0.02em"
+    lineHeight: 1
+    letterSpacing: "0.1em"
 rounded:
   none: "0px"
-  roster: "6px"
-  alert: "8px"
-  button: "10px"
-  block-patch: "18px"
+  card: "4px"
+  alert: "6px"
+  button: "8px"
+  sign: "10px"
+  plaque: "18px"
   round: "50%"
 spacing:
   gutter: "clamp(16px, 4vw, 40px)"
   container: "1200px"
-  header: "76px"
-  header-mobile: "64px"
-  section: "clamp(72px, 10vw, 128px)"
-  rib: "30px"
   field: "14px"
-  patch-rim: "7px"
+  stack: "28px"
+  entry: "24px"
+  sign-band: "clamp(36px, 5vw, 56px)"
+  section: "clamp(72px, 10vw, 128px)"
+  cta: "clamp(80px, 11vw, 140px)"
 components:
-  button-red:
+  button-primary:
     backgroundColor: "{colors.red}"
     textColor: "#ffffff"
-    typography: "{typography.title}"
+    typography: "{typography.button}"
     rounded: "{rounded.button}"
-    padding: "1.05em 1.6em"
-  button-red-hover:
-    backgroundColor: "{colors.red-deep}"
-  button-white:
-    backgroundColor: "{colors.wool}"
-    textColor: "{colors.navy}"
+    padding: "1.05em 1.7em"
+  button-primary-small:
+    backgroundColor: "{colors.red}"
+    textColor: "#ffffff"
     rounded: "{rounded.button}"
-    padding: "1.05em 1.6em"
-  button-block:
+    padding: "0.95em 1.3em"
+  button-primary-block:
     backgroundColor: "{colors.red}"
     textColor: "#ffffff"
     rounded: "{rounded.button}"
     padding: "1.15em 1.4em"
     width: "100%"
-  roster-sheet:
-    backgroundColor: "{colors.paper}"
+  card-apply:
+    backgroundColor: "{colors.card}"
     textColor: "{colors.ink}"
-    rounded: "{rounded.roster}"
-    padding: "44px clamp(22px, 3vw, 36px) 28px"
-  roster-field:
+    rounded: "{rounded.card}"
+    padding: "30px clamp(22px, 3vw, 36px) 26px"
+  input-field:
     backgroundColor: "transparent"
     textColor: "{colors.ink}"
-    typography: "{typography.body}"
     rounded: "{rounded.none}"
     padding: "10px 2px 8px"
-  roster-label:
-    textColor: "{colors.navy}"
-    typography: "{typography.label}"
-  patch-logo:
+  input-field-invalid:
+    backgroundColor: "{colors.error-wash}"
+    textColor: "{colors.ink}"
+  sign-enamel:
+    backgroundColor: "{colors.red}"
+    textColor: "#ffffff"
+    rounded: "{rounded.sign}"
+    padding: "24px clamp(20px, 4vw, 48px)"
+  plaque-enamel:
+    backgroundColor: "{colors.enamel}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.plaque}"
+    padding: "clamp(40px, 6vw, 64px) clamp(24px, 6vw, 72px)"
+  directory-entry:
+    textColor: "{colors.on-glass-soft}"
+    padding: "24px 0"
+  logo-plate:
     backgroundColor: "#ffffff"
     rounded: "{rounded.button}"
     padding: "6px 12px"
-  patch:
-    backgroundColor: "{colors.wool}"
-    textColor: "{colors.navy}"
-    rounded: "{rounded.round}"
-    size: "112px"
-  patch-red:
-    backgroundColor: "{colors.red}"
-    textColor: "{colors.wool}"
-  patch-navy:
-    backgroundColor: "{colors.navy-deep}"
-    textColor: "{colors.wool}"
-  rib-cuff:
-    backgroundColor: "{colors.navy-ink}"
-    height: "{spacing.rib}"
-  motto-band:
-    backgroundColor: "{colors.wool}"
-    textColor: "{colors.ink-soft}"
-    padding: "26px 0"
 ---
 
 # Design System: CAA Careers
 
 ## Overview
 
-**Creative North Star: "The Varsity Roster"**
+**Creative North Star: "The Lit Storefront Window"**
 
-Joining CAA is presented as making the team. Every surface is a physical piece of American varsity kit: navy wool felt as the ground, heat-sealed two-layer twill for lettering, knit rib cuffs between sections, merrowed patches with satin-stitch emblems, jersey numerals for steps, and a white roster sheet as the application. The lion shield from the logo is the mascot. The system is material first: textures are real raster tiles (procedural, with provenance sidecars in `html/assets/tex/`), and the CSS layers them; it never fakes thread with dashed borders.
+The whole page is one pane of shop-window glass at night: a deep navy ground (glass to glass-2) crossed by a single soft diagonal reflection. Everything sits on that glass or behind it. On the glass there is sign painter's lettering: Ultra block letters filled with burnished gold leaf, ringed in red and stepped down-right with a dark-red block shade. Behind it hang real objects: one white application card, a red porcelain sign, an enamel plaque. The visitor should read a real local office that is hiring, not a careers template.
 
-Density is low and confident. Big collegiate block lettering carries the hierarchy, the body copy stays plain and short in Barlow, and red is spent only where a thread or an action would be red on a letterman jacket. Objects sit on the felt slightly askew, as if sewn or laid down by hand, and settle straight when touched.
+Density is low and the pace is deliberate. Long dark passages of glass separate a few objects. Each object has its own physical material (gilt, porcelain, card stock), and that material is shown through layered inset rims and soft drop shadows, not through decoration added on top. Brand inks come from the CAA logo (navy and red). Gold is the sign painter's metal and never becomes a flat UI color for surfaces.
 
-The logo is an identity asset used exactly as supplied, always on a white patch; it is never recolored, traced or rebuilt in twill.
+The world rejects two category defaults: the stock-photo careers hero and the grid of icon cards.
 
 **Key Characteristics:**
-- Navy felt ground with a raster fiber grain; heather and wool as the only secondary grounds.
-- Display type is always two-layer twill: wool face, navy keyline, red outer layer (inverted on light grounds).
-- Sections are divided by knit rib cuffs, not rules or gradients.
-- Benefits are patches in four silhouettes at varied size and tilt; steps are twill jersey numerals.
-- The form is a ruled roster sheet on paper, slightly rotated on desktop.
-- Motion is sewing and settling: one outline reveal on load, patches straighten on hover.
+- Night window glass for the ground, with one diagonal reflection and no other light effects.
+- Gilded Ultra lettering for display headings, with a red outline and a dark-red block shade.
+- One white card, which is the working application form. It is hung slightly askew.
+- Porcelain enamel plates for the motto (red sign) and the steps (cream plaque, navy border).
+- Gold pinstripe double rules for dividers and sills.
+- Barlow for body text, Barlow Condensed uppercase for labels and buttons, and Yellowtail script for a few sign phrases.
 
 ## Colors
 
-Team colors taken from the CAA logo: a deep dyed navy and a single varsity red, on wool and paper whites.
+A night palette: deep glass navies, the two logo inks, one sign painter's gold family, and warm porcelain whites.
 
 ### Primary
-- **Varsity Navy** (navy): the felt dye. Hero, benefits and closing grounds (as a gradient to Felt Shadow), twill keylines on felt, the face of twill on light grounds, field labels and roster headings.
-- **Felt Shadow** (navy-deep): the lower end of the felt gradient and the body of navy patches.
-- **Locker Navy** (navy-ink): page background, sticky header, footer, and the base of every rib cuff.
+- **Logo Red** (red): The enamel of the button and the motto sign, the outline ring of gilded letters, the double rule under card and plaque headings, the script accents, the step numbers, the caret, and error text.
+- **Lacquer Red Deep** (red-deep): The bottom of the button gradient, the inner rim of the button, and error alert text.
+- **Block Shade** (shade): Used only for the stepped block shade behind gilded lettering and the arched "NOW HIRING". It is never used as a fill or as text.
 
 ### Secondary
-- **Letterman Red** (red): action buttons, the outer twill layer, the "CAA" accent letters, checklist discs, patch rims and red patch bodies, field error text.
-- **Pressed Red** (red-deep): button hover and alert text.
-- **Signal Red** (red-bright): focus outline only (3px, 3px offset), chosen to read on both navy and paper.
+- **Leaf Gold** (gold): The checklist ticks, the directory names, the button pinstripe, text selection, and the low-alpha gold hairlines on the header and footer.
+- **Burnish Gold** (gold-light): The hover pinstripe and the focus ring. It is the brightest point of the metal.
+- **Tarnish Gold** (gold-dim): The double-rule sill under the first window, the directory's top double rule, and the scrollbar thumb.
+- The gold-leaf raster (`assets/tex/gold-leaf.webp`) is the real gold surface. These hexes only approximate it in the places a raster cannot go.
+
+### Tertiary
+- **Logo Navy** (navy): Headings and labels on light surfaces, the plaque's border ring, and the input's focus underline.
 
 ### Neutral
-- **Wool White** (wool / on-felt): twill faces on felt, the motto band, wool patch bodies, white buttons, primary text on felt.
-- **Sweatshirt Heather** (heather): the secondary ground for the steps band, carrying the same felt-grain tile.
-- **Roster Paper** (paper): the application sheet.
-- **Roster Ruling** (rule): the 2px underline of every roster field.
-- **Ink** (ink) and **Faded Ink** (ink-soft): text on paper, heather and wool.
-- **Felt Haze** (on-felt-soft): secondary text on felt, tinted from navy rather than gray.
-- **Clearance Green** (success): the success badge only.
+- **Window Glass** (glass) and **Glass Lift** (glass-2): The page ground, the header, and the alternating vertical gradient of the pane.
+- **Glass Deep** (glass-deep): The footer, which reads as the dark frame below the window.
+- **Enamel Cream** (enamel): The steps plaque.
+- **Card Stock** (card): The application card.
+- **Pencil Rule** (rule): The input underline at rest.
+- **Ink** (ink) and **Ink Soft** (ink-soft): Body text and secondary text on light surfaces.
+- **On Glass** (on-glass) and **On Glass Soft** (on-glass-soft): Strong text and body text on the glass.
+- **Error Wash** (error-wash): The background of invalid inputs and the form alert.
 
 ### Named Rules
-**The Thread Not Ground Rule.** Red is thread and action: buttons, outlines, accent letters, patch rims and patch fills. It never covers a section ground.
+**The Metal Is Not Paint Rule.** Gold appears as leaf (the raster clipped into letters), as pinstripe, or as a tick or hairline. Never fill a panel, button, or background with gold.
 
-**The Three Grounds Rule.** A section sits on navy felt, heather, or wool. Paper is reserved for the roster sheet; locker navy for header, footer and cuffs.
+**The Two Inks Rule.** Red and navy are the logo's inks and the only chromatic colors besides gold. Do not add a success green, a blue link color, or any other accent hue. The success state is a red badge with a white rim.
 
 ## Typography
 
-**Display Font:** Graduate (with Rockwell, serif), self-hosted, weight 400 only
-**Body Font:** Barlow (with system-ui, sans-serif), 400 to 700
-**Label Font:** Barlow Condensed 700 (with Barlow)
+**Display Font:** Ultra (with Rockwell Extra Bold, serif)
+**Body Font:** Barlow (with system-ui, sans-serif)
+**Label Font:** Barlow Condensed 700 (with Barlow, system-ui)
+**Script Font:** Yellowtail (with cursive)
 
-**Character:** Graduate is collegiate block lettering, the face of a team jacket; it is always uppercase and almost always rendered as twill. Barlow is the plain-spoken voice underneath, and its condensed cut does the uniform-label work: checklists, field labels, the motto.
+**Character:** Ultra is the sign painter's slab block, heavy enough to hold leaf, outline, and shade at once. Barlow is plain enough to be a working office's paperwork. Condensed uppercase labels sound like stencilled shopfront type, and Yellowtail is the single flourish a sign painter adds.
 
 ### Hierarchy
-- **Display** (Graduate 400, clamp(2.6rem, 6.2vw, 5.75rem), 1.02): the hero headline, in two-layer twill, max 11ch (14ch below 980px), balanced.
-- **Numeral** (Graduate 400, clamp(4.5rem, 8vw, 6rem), 0.95): jersey step numbers in twill; 6rem is the display cap.
-- **Headline** (Graduate 400, clamp(2.125rem, 4.6vw, 3.75rem), 1.06): section titles in twill; the closing call runs up to 4.25rem at max 22ch.
-- **Title** (Graduate 400, 1.375 to 1.75rem, 1.1): patch, step, roster and success headings, plain (no twill), uppercase, wool on felt or navy on light.
-- **Body** (Barlow 400, 1.0625rem, 1.55): copy; the lead runs to 1.25rem at max 34rem. Patch and step copy hold 26 to 30ch.
-- **Label** (Barlow Condensed 700, 0.875rem, 0.08em, uppercase): roster field labels. The checklist uses the same cut at 1.125rem / 0.02em, the motto at clamp(1.125rem, 2.2vw, 1.5rem) / 0.04em.
+- **Display** (Ultra 400, clamp(2.5rem, 5.4vw, 4.75rem), 1.08): The gilded h1 only. Keep it to about 12 to 14ch with balanced wrapping.
+- **Headline** (Ultra 400, clamp(2.125rem, 4.6vw, 3.75rem), 1.08): Gilded section headings on the glass. Keep them to about 18 to 20ch.
+- **Title** (Ultra 400, clamp(1.75rem, 3.4vw, 2.75rem), 1.1): Navy headings on enamel, such as the plaque title. The card heading uses the same face at 1.375rem.
+- **Title Small** (Ultra 400, clamp(1.375rem, 2vw, 1.75rem), 1.1): Directory names, which get a 1px red outline and a 2px shade instead of the full gilt. Step names use the same face at 1.5rem in navy, and step numbers use it at 1.75rem in red.
+- **Script** (Yellowtail 400, clamp(2.5rem, 4vw, 3rem), 1): The card's "Apply within" phrase, the "Thank you!" success heading, and the footer tagline (1.75rem).
+- **Lead** (Barlow 400, clamp(1.0625rem, 1.4vw, 1.25rem), 1.55): The first-window paragraph, kept to 34rem or less.
+- **Body** (Barlow 400, 1.0625rem, 1.55): All running text. Descriptions on glass are kept to 40ch or less. Input text uses weight 500.
+- **Label** (Barlow Condensed 700, 0.875rem, 0.08em, uppercase): Field labels. The checklist uses the same face at 1.125rem with 0.05em tracking, and the motto sign uses it at clamp(1.125rem, 2.2vw, 1.5rem) with 0.06em tracking.
+- **Button** (Barlow Condensed 700, 1.0625rem, 0.1em, uppercase): All button labels.
 
 ### Named Rules
-**The Twill Rule.** Display, headline and numeral type is set as two-layer twill: a back copy (outer layer, red, 0.1em ring, woven through the `#twill-weave` SVG filter), a front copy (face with a 0.035em keyline) and a texture copy clipped to the twill tile. On light grounds use the on-light variant: navy face, wool keyline, 0.075em outline, inverted screen texture.
+**The Lettering Is Painted Rule.** Ultra on glass is always gilded: leaf fill, red outline ring, and block shade together. Ultra on enamel or card is flat navy or red ink. Never set plain gold or white Ultra on the glass.
 
-**The One Red Word Rule.** Inside a twill line, a red word (red face, 0.05em wool keyline) marks the brand name only.
+**The One Flourish Rule.** Yellowtail is reserved for short sign phrases on the card, the success state, and the footer. It is never used for body text, labels, or a line stacked above a section heading.
 
 ## Layout
 
-A single 1200px container with a fluid gutter (clamp(16px, 4vw, 40px)) and a sticky 76px header (64px under 620px). Sections are full-bleed bands with clamp(72px, 10vw, 128px) vertical padding, separated by 30px rib cuffs: under the hero, around the motto band, above the closing call and above the footer.
+The page uses one centered container, `min(100% - 2 × gutter, 1200px)`, with a fluid gutter. It reads as one continuous pane. `main` carries the glass gradient and the reflection, so sections don't create their own backgrounds.
 
-The hero is a two-column grid (1.15fr copy and checklist, 0.85fr roster with a 340px floor), column gap clamp(32px, 5vw, 80px). Under 980px it stacks copy, form, checklist so the form begins inside the first phone screen; the roster drops its rotation and caps at 560px.
+- **First window:** Two columns of 1.15fr and minmax(340px, .85fr), with the copy and checklist on the left and the card spanning both rows on the right. The column gap is clamp(32px, 5vw, 80px) and the row gap is 28px. The window ends in a 9px double gold pinstripe sill. At 980px or less it becomes one column ordered copy, card, checklist, so the card starts inside the first phone screen.
+- **Rhythm:** Sections use the section padding. The sign band is tighter (sign-band), and the final call is looser (cta). Within the card, each field adds 14px of top padding.
+- **Directory:** Two columns on desktop with a column gap of clamp(32px, 6vw, 96px), and one column at 980px or less.
+- **Hours rows:** A four-track grid (number, name, dotted leader, text). At 980px or less the text drops under the name, and at 620px or less the leader is hidden.
+- **Header:** Sticky and 76px tall, or 64px at 620px or less. The logo plate sits on the left and the small button on the right.
 
-Benefits use a three-column patch grid where the middle column drops 56px, giving a sewn-on scatter; under 980px it becomes two columns with even items dropping 40px. Steps use four columns, two under 980px, and a single list with a 96px numeral column under 620px.
+**The One Pane Rule.** The glass is a single surface from header to final call. Don't add section bands with their own background tints. Objects hang on the glass instead.
 
 ## Elevation & Depth
 
-Depth is physical: objects lie on the felt and cast short, dark, navy-tinted shadows (a tight contact shadow plus a soft negative-spread drop). Nothing glows and nothing floats in empty space. The felt and the twill carry their own depth through the raster tiles and blend modes.
+Depth is physical, not abstract. Objects sit in front of the glass and cast real shadows, made of a tight contact shadow plus a long, soft, negative-spread drop. Material edges are built from stacked `inset` rings: the button's lacquer rim and pinstripe, the sign's white rim, the plaque's navy border. The glass itself is lit by one diagonal reflection and nothing else.
 
 ### Shadow Vocabulary
-- **Button rest** (`0 2px 3px rgb(5 15 30 / .25), 0 8px 18px -6px rgb(5 15 30 / .45)`) and **lift** (`0 4px 6px rgb(5 15 30 / .25), 0 14px 26px -8px rgb(5 15 30 / .5)`) with a 2px rise.
-- **Patch** (`0 3px 4px rgb(3 10 20 / .35), 0 12px 22px -8px rgb(3 10 20 / .55)`); the felt body inside the rim takes `inset 0 1px 2px rgb(0 0 0 / .25)`.
-- **Mascot** (`0 4px 6px rgb(3 10 20 / .4), 0 16px 30px -10px rgb(3 10 20 / .6)`).
-- **Roster sheet** (`0 2px 4px rgb(0 0 0 / .2), 0 30px 60px -20px rgb(0 0 0 / .6)`): the deepest drop, a sheet of paper laid on felt.
-- **Logo patch** (`0 2px 6px rgb(0 0 0 / .3)`).
-- **Twill lift** (`0 .1em .16em rgb(5 15 30 / .45)`) under the outer twill layer.
+- **Hung card** (`0 2px 4px rgb(0 0 0 / .3), 0 30px 60px -20px rgb(0 0 0 / .7)`): The application card, the only object that floats this far forward.
+- **Plaque** (`0 4px 6px rgb(0 0 0 / .3), 0 30px 50px -20px rgb(0 0 0 / .6)`, plus inset 10px enamel and 12px navy rings): The steps plaque.
+- **Button** (`0 2px 3px rgb(0 0 0 / .3), 0 10px 22px -8px rgb(0 0 0 / .55)`, plus inset 3px red-deep and 4.5px gold rings): On hover it lifts 2px and the drop deepens.
+- **Sign** (`0 3px 5px rgb(0 0 0 / .35)`, plus inset 6px red and 9px white rings): The motto sign sits flat against the glass.
+- **Logo plate** (`inset 0 0 0 1.5px rgb(20 54 91 / .25), 0 2px 6px rgb(0 0 0 / .35)`): The white plate that holds the logo.
+- **Block shade** (five stepped text shadows from .06em to .12em down-right in shade): This shadow belongs to the lettering, not to the objects.
 
 ### Named Rules
-**The Laid-On Rule.** Every shadow pairs a contact shadow with a blurred, negatively spread drop. No hard offset shadows, no colored glows.
+**The Single Reflection Rule.** The glass gets exactly one diagonal reflection (105°, white at about 8.5% or less) as a fixed layer behind the content. Don't add glows, spotlights, noise, or extra light streaks.
+
+**The Shade Belongs To Letters Rule.** Hard, zero-blur, offset shadows are allowed only as the sign painter's block shade on Ultra lettering. Objects (card, plates, buttons) always cast soft shadows.
 
 ## Shapes
 
-Silhouettes come from sewn goods. Patches are a 7px merrowed rim (the merrow tile dyed in the thread color) around a felt body, in four shapes: round (50%), shield (16px top corners, 50%/62% elliptical bottom), block (18px, 1.3 ratio) and oval (50%, 1.35 ratio). Patches tilt between -6deg and 7deg; the roster tilts 0.6deg; the mascot -4deg.
-
-Elsewhere corners are modest: 10px for buttons and the logo patch, 6px for the roster sheet, 8px for alerts. Roster fields are square, underline-only. Checklist marks and the success badge are full circles. The roster head closes with a 3px double navy rule.
+Corners are slight and belong to the material. Card stock is almost square (4px) and hung at −0.8° on desktop, straightening at 980px or less. Buttons and the logo plate are pressed enamel (8px). The motto sign is a little rounder (10px), and the hours plaque is the softest (18px), like a stamped porcelain plate. Inputs have no corners at all: they are a 2px underline on the card. Dividers are always double rules, either 4px double red under headings on light surfaces or 4px double gold-dim on glass, with single 1px hairlines for list rows. The only circle is the success badge.
 
 ## Components
 
 ### Buttons
-Heavy, sewn-on tabs set in Graduate.
-- **Shape:** gently rounded (10px), uppercase Graduate at 1rem, 0.03em tracking, 0.55em icon gap.
-- **Red (primary):** Letterman Red on white text. Small (0.8125rem) in the header; block (full width, 1.0625rem) as the roster submit; 1.125rem in the closing call.
-- **White:** Wool White with navy text, hover to pure white.
-- **Hover / Focus:** 2px rise with the lift shadow over 0.25s ease-out; red deepens to Pressed Red; the arrow icon slides 3px right. Focus is the global Signal Red outline.
-- **Loading:** disabled at 0.8 opacity with progress cursor; the arrow nudges 4px on a 0.9s loop.
+Red enamel with a gold pinstripe. It is tactile and lacquered, and it is the only call to action.
+- **Shape:** Pressed enamel corners (8px).
+- **Primary:** A vertical lacquer gradient (#c5292e to red at 55% to red-deep), white Barlow Condensed uppercase text, an inset 3px red-deep rim, and a 4.5px gold pinstripe inside it.
+- **Sizes:** Small in the header, default in the final call (1.125rem there), and block at full width on the card (1.125rem).
+- **Hover / Focus:** It lifts 2px, the pinstripe brightens to gold-light, the drop deepens, and the trailing arrow nudges 3px. Focus is the global 3px gold-light outline with a 3px offset.
+- **Loading:** The button is disabled with a progress cursor at 85% opacity while the arrow pulses.
 
-### Roster Sheet (application form)
-- **Container:** Roster Paper, 6px corners, roster shadow, rotated 0.6deg on desktop. Head: shield emblem at 56px, Graduate title in navy, a 3px double navy rule beneath.
-- **Fields:** transparent, square, 2px Roster Ruling underline, Barlow 500 at 1.0625rem, red caret. Labels in Barlow Condensed 700 navy; "(optional)" drops to Barlow 500 Faded Ink.
-- **Focus:** underline turns navy, field washes to #f1f5fa, plus a 2px navy under-shadow on keyboard focus. Hover darkens the underline to #9fb1c7.
-- **Error:** underline turns red, field washes to #fdf1f1, a 0.875rem 600 red message appears below. The form-level alert is a #fdf1f1 box with a #f0c4c6 border, 8px corners, Pressed Red text.
-- **Success:** a 76px Clearance Green disc with a check, a Graduate "Thank you!" title, Faded Ink copy.
+### The "Apply within" Card (form)
+The one card on the page, which is also the working application form.
+- **Corner Style:** 4px, rotated −0.8° on desktop.
+- **Background:** Card stock with ink text, and the hung-card shadow.
+- **Head:** Centered. The red Yellowtail "Apply within" sits above a navy Ultra heading and a soft subline, closed by a 4px double red rule.
+- **Internal Padding:** 30px top, clamp(22px, 3vw, 36px) at the sides, and 26px at the bottom.
+- **After submit:** A red success badge with a white inner rim, a red script "Thank you!", and soft body text.
 
-### Patches (benefits)
-Sewn felt patches with embroidered emblems.
-- **Construction:** the rim is the thread color multiplied over the merrow tile (10px); the body is the base color with the felt grain (200px, soft-light); the emblem is a satin-stitch tile masked to an SVG emblem at 46% of the patch.
-- **Variants:** wool body with red rim and navy emblem; red body with wool rim and emblem; felt-shadow body with red rim and wool emblem.
-- **Hover:** the patch straightens to 0deg and scales 1.04 over 0.45s ease-out.
+### Inputs / Fields
+- **Style:** A transparent field with a 2px pencil-rule underline, no radius, Barlow 500 text, a red caret, and navy condensed uppercase labels above it.
+- **Hover:** The underline darkens.
+- **Focus:** The underline turns navy, a faint blue wash fills the field, and a 2px navy shadow line appears on focus-visible.
+- **Error:** The underline turns red over the error wash, with a 600-weight red message below. The form alert is an error-wash panel with a 6px radius and red-deep text.
 
-### Rib Cuff
-A 30px band of the rib tile (12x30, navy / wool / red / wool / navy with knit ridges) repeating horizontally on Locker Navy. Decorative, aria-hidden.
+### Directory
+A glass-door directory for the benefits: gilded names painted on glass, not cards.
+- A two-column definition list under a 4px double gold-dim top rule. Each entry has 24px of block padding and a 1px gold hairline (gold at 28% alpha) below it.
+- Names are Ultra in gold with a 1px red outline and a 2px shade. Descriptions are on-glass-soft, kept to 40ch or less.
 
-### Mascot Patch
-The supplied lion shield, unaltered at 86px, on a white disc inside a 148px red merrowed rim, tilted -4deg. It sits above the closing call only.
+### Hours Plaque
+The steps, shown as a porcelain "hours" plaque with dotted leaders.
+- An enamel cream plate with an 18px radius and a navy ring inset 10px from the edge. The navy Ultra title closes with a 4px double red rule.
+- Each row has a red Ultra number, a navy Ultra name, a 3px dotted leader, and soft text. Rows are separated by 1px hairlines, and the last row has none.
 
-### Logo Patch
-The supplied horizontal logo on a white patch, 6px 12px padding, 10px corners. 46px tall in the header (36px on phones), 64px in the footer.
+### Motto Sign
+A flat red porcelain sign with a white rim inset 6px from the edge, and white condensed uppercase text with a cream highlight phrase. It never carries the button's gold pinstripe, so it cannot be read as clickable.
 
-### Checklist
-Barlow Condensed 700 uppercase items, each led by a 26px Letterman Red disc holding a white 3-weight check. Two columns, one under 620px.
+### Gilded Lettering (signature)
+Two stacked copies of the same text. The back copy is red, ringed by a 12-point text-shadow outline at .045em plus the five-step block shade. The front copy is transparent, with the gold-leaf raster clipped into the glyphs at a tile size of 1.7em, so the leaf seams scale with the letters. For the arched "NOW HIRING", the same three layers (shade offset, red stroke, leaf pattern fill) are set on an SVG arc.
+- **Glint:** On headings marked for it, one specular band (105°, warm white at 85%) sweeps once across the leaf over 1.8s on the out-expo easing after a 0.5s delay. It plays once and never loops. Reduced motion turns it off.
 
-### Jersey Numerals (steps)
-Twill numerals 1 to 4 on heather (on-light variant), each with a Graduate navy title and short Faded Ink copy.
-
-### Motion
-One easing for everything: `cubic-bezier(.16, 1, .3, 1)`. The signature is the sew: the hero headline's outer twill layer reveals left to right once on load (1.1s, 0.25s delay, clip-path). Everything else is hover response (0.2 to 0.45s). Under `prefers-reduced-motion` all animation and transition is removed and smooth scroll is off.
+### Logo Plate
+The CAA logo, used exactly as supplied, on a white enamel plate with an 8px radius and a faint navy inner line. It is 46px tall in the header, 36px on phones, and 64px in the footer.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** render every material from its raster tile: felt-grain (400px, soft-light), twill (32px), merrow (10px), satin (6 to 8px), rib (12x30). New tiles ship with a provenance sidecar.
-- **Do** set display, section and numeral type as two-layer twill, switching to the on-light variant on heather or wool.
-- **Do** divide full-bleed bands with a 30px rib cuff.
-- **Do** keep red to thread and action: buttons, twill outlines, the brand word, checklist discs, patch rims and fills.
-- **Do** tilt sewn objects slightly (between -6deg and 7deg) and let them settle straight on hover.
-- **Do** show the logo and the lion shield exactly as supplied, on white patches.
-- **Do** keep the application on the roster sheet: paper, underline fields, condensed navy labels.
+- **Do** gild every Ultra heading on the glass with all three layers: leaf, red ring, and block shade.
+- **Do** hang new content as objects on the one pane, with soft object shadows and inset material rims.
+- **Do** use double rules for dividers: red on light surfaces, gold-dim on glass.
+- **Do** keep the application card as the only card, and keep the form inside the first viewport on every breakpoint.
+- **Do** use stroke icons only where they do a job (tick, arrow, lock, alert), inline at 1.1 to 1.25em in currentColor.
+- **Do** honor reduced motion. The glint, the transitions, and smooth scroll all turn off.
 
 ### Don't:
-- **Don't** draw stitching with dashed or dotted CSS borders; thread comes only from the merrow, satin and rib rasters.
-- **Don't** use red as a section ground.
-- **Don't** recolor, trace or re-letter the logo or the lion shield.
-- **Don't** use hard offset shadows or colored glows; shadows are contact plus soft drop, navy-tinted.
-- **Don't** set Graduate in lowercase or for running copy; body, labels and form text stay in Barlow.
-- **Don't** set any twill type larger than 6rem.
+- **Don't** build grids of icon cards or tiles. Lists are directories, plaques, or ticked checklists.
+- **Don't** use a stock-photo hero.
+- **Don't** give the motto sign or any other non-interactive plate the gold pinstripe. The pinstripe means "press".
+- **Don't** add a second reflection, a glow, or a texture to the glass.
+- **Don't** fill surfaces with gold or introduce a new accent hue.
+- **Don't** stack small labels or script lines above section headings. Script is for the card, the success state, and the footer only.
+- **Don't** alter, recolor, or crop the CAA logo, or set it directly on the glass without its plate.

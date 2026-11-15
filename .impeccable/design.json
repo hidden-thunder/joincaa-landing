@@ -1,507 +1,601 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-15T04:46:09.500985+00:00",
+  "generatedAt": "2026-11-15T05:25:37+00:00",
   "title": "Design System: CAA Careers",
   "extensions": {
     "colorMeta": {
+      "glass": {
+        "role": "neutral",
+        "displayName": "Window Glass",
+        "canonical": "#0b1626",
+        "oklch": "oklch(19.9% 0.036 257.7)",
+        "purpose": "Page ground and header; darkest stop of the pane gradient.",
+        "tonalRamp": [
+          "#070b13",
+          "#1e2630",
+          "#394351",
+          "#556275",
+          "#768397",
+          "#9aa6b7",
+          "#c0cad8",
+          "#e7effb"
+        ]
+      },
+      "glass-2": {
+        "role": "neutral",
+        "displayName": "Glass Lift",
+        "canonical": "#10213a",
+        "oklch": "oklch(24.7% 0.053 258.0)",
+        "purpose": "Lighter stop of the pane gradient.",
+        "tonalRamp": [
+          "#050b16",
+          "#1b2635",
+          "#344358",
+          "#50627d",
+          "#7084a0",
+          "#95a6c0",
+          "#bccae0",
+          "#e4efff"
+        ]
+      },
+      "glass-deep": {
+        "role": "neutral",
+        "displayName": "Glass Deep",
+        "canonical": "#08111e",
+        "oklch": "oklch(17.6% 0.030 257.3)",
+        "purpose": "Footer frame below the window.",
+        "tonalRamp": [
+          "#070b11",
+          "#1f252f",
+          "#3a434f",
+          "#576272",
+          "#788394",
+          "#9ca6b4",
+          "#c1cad6",
+          "#e8eff9"
+        ]
+      },
       "navy": {
-        "role": "primary",
-        "displayName": "Varsity Navy",
-        "canonical": "oklch(32.9% 0.077 253)",
+        "role": "tertiary",
+        "displayName": "Logo Navy",
+        "canonical": "#14365b",
+        "oklch": "oklch(32.9% 0.077 252.8)",
+        "purpose": "Headings and labels on light surfaces, plaque ring, input focus.",
         "tonalRamp": [
-          "oklch(15% 0.037 253)",
-          "oklch(25% 0.048 253)",
-          "oklch(35% 0.060 253)",
-          "oklch(48% 0.075 253)",
-          "oklch(60% 0.065 253)",
-          "oklch(72% 0.052 253)",
-          "oklch(84% 0.038 253)",
-          "oklch(95% 0.025 253)"
-        ]
-      },
-      "navy-deep": {
-        "role": "primary",
-        "displayName": "Felt Shadow",
-        "canonical": "oklch(26.1% 0.059 253)",
-        "tonalRamp": [
-          "oklch(15% 0.028 253)",
-          "oklch(25% 0.037 253)",
-          "oklch(35% 0.046 253)",
-          "oklch(48% 0.057 253)",
-          "oklch(60% 0.050 253)",
-          "oklch(72% 0.040 253)",
-          "oklch(84% 0.029 253)",
-          "oklch(95% 0.019 253)"
-        ]
-      },
-      "navy-ink": {
-        "role": "primary",
-        "displayName": "Locker Navy",
-        "canonical": "oklch(22.4% 0.048 254)",
-        "tonalRamp": [
-          "oklch(15% 0.023 254)",
-          "oklch(25% 0.030 254)",
-          "oklch(35% 0.037 254)",
-          "oklch(48% 0.047 254)",
-          "oklch(60% 0.041 254)",
-          "oklch(72% 0.032 254)",
-          "oklch(84% 0.024 254)",
-          "oklch(95% 0.016 254)"
+          "#020b1a",
+          "#13263c",
+          "#2a4461",
+          "#436389",
+          "#6485ac",
+          "#8ba8ca",
+          "#b3cce9",
+          "#ddf1ff"
         ]
       },
       "red": {
-        "role": "secondary",
-        "displayName": "Letterman Red",
-        "canonical": "oklch(50.4% 0.184 26)",
+        "role": "primary",
+        "displayName": "Logo Red",
+        "canonical": "#b62126",
+        "oklch": "oklch(50.4% 0.184 25.6)",
+        "purpose": "Button and sign enamel, lettering outline, rules under light-surface headings, script accents, errors.",
         "tonalRamp": [
-          "oklch(15% 0.087 26)",
-          "oklch(25% 0.115 26)",
-          "oklch(35% 0.143 26)",
-          "oklch(48% 0.178 26)",
-          "oklch(60% 0.156 26)",
-          "oklch(72% 0.123 26)",
-          "oklch(84% 0.090 26)",
-          "oklch(95% 0.060 26)"
+          "#260000",
+          "#500002",
+          "#7d0d14",
+          "#ad2729",
+          "#d54f4a",
+          "#f27e75",
+          "#ffaba2",
+          "#ffd8cf"
         ]
       },
       "red-deep": {
+        "role": "primary",
+        "displayName": "Lacquer Red Deep",
+        "canonical": "#8f1a1e",
+        "oklch": "oklch(42.4% 0.152 25.2)",
+        "purpose": "Button gradient foot and rim, alert text.",
+        "tonalRamp": [
+          "#220000",
+          "#4a070a",
+          "#741f1f",
+          "#a23835",
+          "#c95b56",
+          "#e6867f",
+          "#ffb1a9",
+          "#ffdcd5"
+        ]
+      },
+      "shade": {
+        "role": "primary",
+        "displayName": "Block Shade",
+        "canonical": "#4a0d10",
+        "oklch": "oklch(27.2% 0.091 23.2)",
+        "purpose": "Sign painter's block shade behind gilded lettering only.",
+        "tonalRamp": [
+          "#1a0304",
+          "#3d1817",
+          "#623230",
+          "#8b4d4a",
+          "#af6e6a",
+          "#ce9490",
+          "#edbbb8",
+          "#ffe4e0"
+        ]
+      },
+      "gold": {
         "role": "secondary",
-        "displayName": "Pressed Red",
-        "canonical": "oklch(42.4% 0.152 25)",
+        "displayName": "Leaf Gold",
+        "canonical": "#d6a94f",
+        "oklch": "oklch(75.9% 0.120 82.5)",
+        "purpose": "Ticks, directory names, pinstripe, selection, gold hairlines.",
         "tonalRamp": [
-          "oklch(15% 0.072 25)",
-          "oklch(25% 0.095 25)",
-          "oklch(35% 0.118 25)",
-          "oklch(48% 0.147 25)",
-          "oklch(60% 0.129 25)",
-          "oklch(72% 0.102 25)",
-          "oklch(84% 0.074 25)",
-          "oklch(95% 0.049 25)"
+          "#170700",
+          "#372000",
+          "#5a3c00",
+          "#805a00",
+          "#a37b25",
+          "#c2a05e",
+          "#e2c590",
+          "#ffecc2"
         ]
       },
-      "red-bright": {
+      "gold-light": {
         "role": "secondary",
-        "displayName": "Signal Red",
-        "canonical": "oklch(61.6% 0.189 23)",
+        "displayName": "Burnish Gold",
+        "canonical": "#f2d995",
+        "oklch": "oklch(89.1% 0.090 90.1)",
+        "purpose": "Hover pinstripe and focus ring.",
         "tonalRamp": [
-          "oklch(15% 0.090 23)",
-          "oklch(25% 0.118 23)",
-          "oklch(35% 0.146 23)",
-          "oklch(48% 0.183 23)",
-          "oklch(60% 0.161 23)",
-          "oklch(72% 0.127 23)",
-          "oklch(84% 0.093 23)",
-          "oklch(95% 0.061 23)"
+          "#120a00",
+          "#302300",
+          "#50400b",
+          "#745f21",
+          "#968044",
+          "#b6a471",
+          "#d8c89f",
+          "#faeecd"
         ]
       },
-      "wool": {
-        "role": "neutral",
-        "displayName": "Wool White",
-        "canonical": "oklch(96.6% 0.004 106)",
+      "gold-dim": {
+        "role": "secondary",
+        "displayName": "Tarnish Gold",
+        "canonical": "#9c7a36",
+        "oklch": "oklch(59.9% 0.096 82.4)",
+        "purpose": "Pinstripe sill, directory double rule, scrollbar.",
         "tonalRamp": [
-          "oklch(15% 0.002 106)",
-          "oklch(25% 0.003 106)",
-          "oklch(35% 0.003 106)",
-          "oklch(48% 0.004 106)",
-          "oklch(60% 0.003 106)",
-          "oklch(72% 0.003 106)",
-          "oklch(84% 0.002 106)",
-          "oklch(95% 0.002 106)"
+          "#150800",
+          "#332100",
+          "#553d05",
+          "#7a5c1b",
+          "#9d7d40",
+          "#bca16e",
+          "#ddc69d",
+          "#feeccc"
         ]
       },
-      "heather": {
+      "enamel": {
         "role": "neutral",
-        "displayName": "Sweatshirt Heather",
-        "canonical": "oklch(91.2% 0.006 255)",
+        "displayName": "Enamel Cream",
+        "canonical": "#f7f6f2",
+        "oklch": "oklch(97.3% 0.005 95.1)",
+        "purpose": "Steps plaque.",
         "tonalRamp": [
-          "oklch(15% 0.003 255)",
-          "oklch(25% 0.004 255)",
-          "oklch(35% 0.005 255)",
-          "oklch(48% 0.006 255)",
-          "oklch(60% 0.005 255)",
-          "oklch(72% 0.004 255)",
-          "oklch(84% 0.003 255)",
-          "oklch(95% 0.002 255)"
+          "#0b0b0a",
+          "#252523",
+          "#43423f",
+          "#62615e",
+          "#83827f",
+          "#a6a5a2",
+          "#cac9c7",
+          "#efeeec"
         ]
       },
-      "paper": {
+      "card": {
         "role": "neutral",
-        "displayName": "Roster Paper",
-        "canonical": "oklch(99.3% 0.003 106)",
+        "displayName": "Card Stock",
+        "canonical": "#fdfdfc",
+        "oklch": "oklch(99.4% 0.001 106.4)",
+        "purpose": "The application card.",
         "tonalRamp": [
-          "oklch(15% 0.002 106)",
-          "oklch(25% 0.002 106)",
-          "oklch(35% 0.002 106)",
-          "oklch(48% 0.003 106)",
-          "oklch(60% 0.003 106)",
-          "oklch(72% 0.002 106)",
-          "oklch(84% 0.002 106)",
-          "oklch(95% 0.002 106)"
+          "#0b0b0b",
+          "#252525",
+          "#424241",
+          "#616160",
+          "#828281",
+          "#a5a5a4",
+          "#c9c9c8",
+          "#eeeeee"
         ]
       },
       "rule": {
         "role": "neutral",
-        "displayName": "Roster Ruling",
-        "canonical": "oklch(86.2% 0.025 254)",
+        "displayName": "Pencil Rule",
+        "canonical": "#cfd6e0",
+        "oklch": "oklch(87.4% 0.016 257.2)",
+        "purpose": "Input underline at rest.",
         "tonalRamp": [
-          "oklch(15% 0.012 254)",
-          "oklch(25% 0.016 254)",
-          "oklch(35% 0.019 254)",
-          "oklch(48% 0.024 254)",
-          "oklch(60% 0.021 254)",
-          "oklch(72% 0.017 254)",
-          "oklch(84% 0.012 254)",
-          "oklch(95% 0.008 254)"
+          "#090b0e",
+          "#22252a",
+          "#3e4249",
+          "#5c626a",
+          "#7d838b",
+          "#a0a5ad",
+          "#c5c9d0",
+          "#ebeff4"
         ]
       },
       "ink": {
         "role": "neutral",
         "displayName": "Ink",
-        "canonical": "oklch(25.6% 0.051 253)",
+        "canonical": "#142338",
+        "oklch": "oklch(25.4% 0.045 257.0)",
+        "purpose": "Body text on light surfaces.",
         "tonalRamp": [
-          "oklch(15% 0.024 253)",
-          "oklch(25% 0.032 253)",
-          "oklch(35% 0.040 253)",
-          "oklch(48% 0.049 253)",
-          "oklch(60% 0.043 253)",
-          "oklch(72% 0.034 253)",
-          "oklch(84% 0.025 253)",
-          "oklch(95% 0.017 253)"
+          "#060b14",
+          "#1c2633",
+          "#364355",
+          "#526279",
+          "#73849c",
+          "#97a6bb",
+          "#becadc",
+          "#e5effe"
         ]
       },
       "ink-soft": {
         "role": "neutral",
-        "displayName": "Faded Ink",
-        "canonical": "oklch(42.8% 0.046 252)",
+        "displayName": "Ink Soft",
+        "canonical": "#44536a",
+        "oklch": "oklch(43.9% 0.043 258.8)",
+        "purpose": "Secondary text on light surfaces.",
         "tonalRamp": [
-          "oklch(15% 0.022 252)",
-          "oklch(25% 0.029 252)",
-          "oklch(35% 0.036 252)",
-          "oklch(48% 0.045 252)",
-          "oklch(60% 0.039 252)",
-          "oklch(72% 0.031 252)",
-          "oklch(84% 0.023 252)",
-          "oklch(95% 0.015 252)"
+          "#060b14",
+          "#1d2532",
+          "#374354",
+          "#546278",
+          "#74839a",
+          "#99a6ba",
+          "#bfcadb",
+          "#e6effd"
         ]
       },
-      "on-felt": {
+      "on-glass": {
         "role": "neutral",
-        "displayName": "Wool White (on felt)",
-        "canonical": "oklch(96.6% 0.004 106)",
+        "displayName": "On Glass",
+        "canonical": "#eef1f5",
+        "oklch": "oklch(95.7% 0.006 255.5)",
+        "purpose": "Strong text on the glass.",
         "tonalRamp": [
-          "oklch(15% 0.002 106)",
-          "oklch(25% 0.003 106)",
-          "oklch(35% 0.003 106)",
-          "oklch(48% 0.004 106)",
-          "oklch(60% 0.003 106)",
-          "oklch(72% 0.003 106)",
-          "oklch(84% 0.002 106)",
-          "oklch(95% 0.002 106)"
+          "#0a0b0c",
+          "#242527",
+          "#404245",
+          "#5f6165",
+          "#808286",
+          "#a3a5a8",
+          "#c7c9cc",
+          "#edeef0"
         ]
       },
-      "on-felt-soft": {
+      "on-glass-soft": {
         "role": "neutral",
-        "displayName": "Felt Haze",
-        "canonical": "oklch(86.3% 0.023 254)",
+        "displayName": "On Glass Soft",
+        "canonical": "#b9c5d4",
+        "oklch": "oklch(81.9% 0.025 254.0)",
+        "purpose": "Body text on the glass.",
         "tonalRamp": [
-          "oklch(15% 0.011 254)",
-          "oklch(25% 0.014 254)",
-          "oklch(35% 0.018 254)",
-          "oklch(48% 0.022 254)",
-          "oklch(60% 0.020 254)",
-          "oklch(72% 0.015 254)",
-          "oklch(84% 0.011 254)",
-          "oklch(95% 0.007 254)"
+          "#080b10",
+          "#20262d",
+          "#3b434c",
+          "#58626e",
+          "#798390",
+          "#9da6b1",
+          "#c2cad4",
+          "#e9eff7"
         ]
       },
-      "success": {
-        "role": "tertiary",
-        "displayName": "Clearance Green",
-        "canonical": "oklch(51.4% 0.114 156)",
+      "error-wash": {
+        "role": "neutral",
+        "displayName": "Error Wash",
+        "canonical": "#fdf1f1",
+        "oklch": "oklch(96.8% 0.013 17.4)",
+        "purpose": "Invalid input and form alert background.",
         "tonalRamp": [
-          "oklch(15% 0.054 156)",
-          "oklch(25% 0.071 156)",
-          "oklch(35% 0.088 156)",
-          "oklch(48% 0.111 156)",
-          "oklch(60% 0.097 156)",
-          "oklch(72% 0.076 156)",
-          "oklch(84% 0.056 156)",
-          "oklch(95% 0.037 156)"
+          "#0e0a0a",
+          "#292324",
+          "#474040",
+          "#685f5f",
+          "#898080",
+          "#aba3a3",
+          "#cec7c7",
+          "#f3eded"
         ]
       }
     },
     "typographyMeta": {
       "display": {
-        "displayName": "Display",
-        "purpose": "Hero headline in two-layer twill."
-      },
-      "numeral": {
-        "displayName": "Jersey Numeral",
-        "purpose": "Step numbers 1-4 in twill on heather."
+        "displayName": "Gilded Display",
+        "purpose": "The h1 only; always gilded (leaf, red ring, block shade)."
       },
       "headline": {
-        "displayName": "Headline",
-        "purpose": "Section titles and closing call in twill."
+        "displayName": "Gilded Headline",
+        "purpose": "Section headings on the glass; always gilded."
       },
       "title": {
-        "displayName": "Title",
-        "purpose": "Patch, step, roster and success headings, plain Graduate."
+        "displayName": "Enamel Title",
+        "purpose": "Flat navy Ultra headings on enamel/card (plaque, card head at 1.375rem)."
+      },
+      "title-sm": {
+        "displayName": "Directory Name",
+        "purpose": "Gold Ultra names with 1px red outline + 2px shade; step names/numbers share the face."
+      },
+      "script": {
+        "displayName": "Sign Script",
+        "purpose": "Yellowtail sign phrases: card 'Apply within', success heading, footer tagline only."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "First-window paragraph, max 34rem."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Copy, lead and field input text."
+        "purpose": "Running text; max 40ch on glass."
       },
       "label": {
-        "displayName": "Label",
-        "purpose": "Roster field labels; same cut for checklist and motto."
+        "displayName": "Stencil Label",
+        "purpose": "Field labels; checklist and motto sign use the same face larger."
       },
-      "checklist": {
-        "displayName": "Checklist",
-        "purpose": "Hero benefit list."
+      "button": {
+        "displayName": "Button Label",
+        "purpose": "All button labels, uppercase."
       }
     },
-    "shadows": [
-      {
-        "name": "button-rest",
-        "value": "0 2px 3px rgb(5 15 30 / .25), 0 8px 18px -6px rgb(5 15 30 / .45)",
-        "purpose": "Buttons at rest."
-      },
-      {
-        "name": "button-lift",
-        "value": "0 4px 6px rgb(5 15 30 / .25), 0 14px 26px -8px rgb(5 15 30 / .5)",
-        "purpose": "Button hover with a 2px rise."
-      },
-      {
-        "name": "patch",
-        "value": "0 3px 4px rgb(3 10 20 / .35), 0 12px 22px -8px rgb(3 10 20 / .55)",
-        "purpose": "Patches sewn on felt."
-      },
-      {
-        "name": "patch-body-inset",
-        "value": "inset 0 1px 2px rgb(0 0 0 / .25)",
-        "purpose": "Felt body inside a patch rim."
-      },
-      {
-        "name": "mascot",
-        "value": "0 4px 6px rgb(3 10 20 / .4), 0 16px 30px -10px rgb(3 10 20 / .6)",
-        "purpose": "Mascot patch above the closing call."
-      },
-      {
-        "name": "roster",
-        "value": "0 2px 4px rgb(0 0 0 / .2), 0 30px 60px -20px rgb(0 0 0 / .6)",
-        "purpose": "Roster sheet laid on felt."
-      },
-      {
-        "name": "logo-patch",
-        "value": "0 2px 6px rgb(0 0 0 / .3)",
-        "purpose": "White logo patch."
-      },
-      {
-        "name": "twill-lift",
-        "value": "0 .1em .16em rgb(5 15 30 / .45)",
-        "purpose": "Under the outer twill layer."
-      },
-      {
-        "name": "focus-ring",
-        "value": "outline: 3px solid #e0474c; outline-offset: 3px",
-        "purpose": "Global keyboard focus."
-      }
-    ],
     "materials": [
       {
-        "name": "felt-grain",
-        "value": "assets/tex/felt-grain.webp 400px, soft-light over navy gradient (200px inside patches)",
-        "purpose": "Felt and heather grounds, patch bodies."
+        "name": "night-glass",
+        "purpose": "The single pane behind all content.",
+        "css": "main { background: linear-gradient(180deg, var(--glass-2) 0%, var(--glass) 30%, var(--glass-2) 62%, var(--glass) 100%); } main::before { background: linear-gradient(105deg, transparent 0 14%, rgb(255 255 255 / .085) 17%, rgb(255 255 255 / .03) 23%, transparent 25%, transparent 27%, rgb(255 255 255 / .05) 28%, transparent 29.5%, transparent 100%); }"
       },
       {
-        "name": "twill",
-        "value": "assets/tex/twill.webp 32px; clipped text copy at .22 multiply (.18 screen inverted on light) plus #twill-weave SVG filter on the outer layer",
-        "purpose": "Two-layer twill lettering."
+        "name": "gold-leaf",
+        "purpose": "Raster leaf clipped into gilded letters; tile scales in em so seams track letter size.",
+        "value": "url(assets/tex/gold-leaf.webp), tile 1.7em (SVG arch: 124px pattern)",
+        "provenance": "html/assets/tex/gold-leaf.webp.json (procedural)"
       },
       {
-        "name": "merrow",
-        "value": "assets/tex/merrow.webp 10px, multiply over thread color",
-        "purpose": "Patch and mascot rims."
+        "name": "gilt-outline-shade",
+        "purpose": "Back copy of gilded lettering: 12-point red text-shadow ring at .045em plus five-step block shade .06em→.12em in --shade."
       },
       {
-        "name": "satin",
-        "value": "assets/tex/satin.webp 8px multiply (6px soft-light on wool patches), masked to assets/emb/*.svg at 46%",
-        "purpose": "Embroidered emblems."
+        "name": "porcelain-sign",
+        "purpose": "Red enamel with white rim.",
+        "value": "inset 0 0 0 6px var(--red), inset 0 0 0 9px #fff, 0 3px 5px rgb(0 0 0 / .35)"
       },
       {
-        "name": "rib",
-        "value": "assets/tex/rib.webp 12x30 repeat-x on navy-ink",
-        "purpose": "Knit rib cuff dividers."
+        "name": "porcelain-plaque",
+        "purpose": "Cream enamel with navy ring.",
+        "value": "inset 0 0 0 10px var(--enamel), inset 0 0 0 12px var(--navy)"
+      },
+      {
+        "name": "card-stock",
+        "purpose": "The one white card, hung at -0.8deg (0deg at <=980px)."
+      },
+      {
+        "name": "gold-pinstripe-rule",
+        "purpose": "Dividers: 4px double gold-dim on glass, 4px double red on light surfaces; 9px double-line sill under the first window."
+      }
+    ],
+    "shadows": [
+      {
+        "name": "hung-card",
+        "value": "0 2px 4px rgb(0 0 0 / .3), 0 30px 60px -20px rgb(0 0 0 / .7)",
+        "purpose": "Application card."
+      },
+      {
+        "name": "plaque",
+        "value": "inset 0 0 0 10px var(--enamel), inset 0 0 0 12px var(--navy), 0 4px 6px rgb(0 0 0 / .3), 0 30px 50px -20px rgb(0 0 0 / .6)",
+        "purpose": "Hours plaque."
+      },
+      {
+        "name": "button",
+        "value": "inset 0 0 0 3px var(--red-deep), inset 0 0 0 4.5px var(--gold), 0 2px 3px rgb(0 0 0 / .3), 0 10px 22px -8px rgb(0 0 0 / .55)",
+        "purpose": "Red enamel button at rest."
+      },
+      {
+        "name": "button-hover",
+        "value": "inset 0 0 0 3px var(--red-deep), inset 0 0 0 4.5px var(--gold-light), 0 4px 6px rgb(0 0 0 / .3), 0 16px 28px -10px rgb(0 0 0 / .6)",
+        "purpose": "Button hover, with translateY(-2px)."
+      },
+      {
+        "name": "sign",
+        "value": "inset 0 0 0 6px var(--red), inset 0 0 0 9px #fff, 0 3px 5px rgb(0 0 0 / .35)",
+        "purpose": "Motto sign, flat to the glass."
+      },
+      {
+        "name": "logo-plate",
+        "value": "inset 0 0 0 1.5px rgb(20 54 91 / .25), 0 2px 6px rgb(0 0 0 / .35)",
+        "purpose": "Logo plate."
+      },
+      {
+        "name": "header-hairline",
+        "value": "0 1px 0 rgb(214 169 79 / .25), 0 3px 0 rgb(214 169 79 / .08)",
+        "purpose": "Gold hairline under the sticky header."
+      },
+      {
+        "name": "block-shade",
+        "value": ".06em .06em 0 var(--shade), .075em .075em 0 var(--shade), .09em .09em 0 var(--shade), .105em .105em 0 var(--shade), .12em .12em 0 var(--shade)",
+        "purpose": "Sign painter's shade on Ultra lettering only."
       }
     ],
     "motion": [
       {
         "name": "ease-out",
         "value": "cubic-bezier(.16, 1, .3, 1)",
-        "purpose": "The single easing for all transitions and the sew reveal."
+        "purpose": "All transitions and the glint."
       },
       {
-        "name": "sew",
-        "value": "clip-path inset reveal left to right, 1.1s ease-out, .25s delay, once",
-        "purpose": "Hero headline outer twill layer at load."
+        "name": "glint",
+        "value": "1.8s ease-out .5s, once; 105deg band rgb(255 250 230 / .85) from background-position 160% to -60%",
+        "purpose": "Single specular sweep across gilded headings marked data-glint. Never loops; off under reduced motion."
       },
       {
-        "name": "button-hover",
-        "value": ".25s ease-out transform and shadow, .2s background",
-        "purpose": "Button rise; icon slides 3px."
-      },
-      {
-        "name": "patch-settle",
-        "value": ".45s ease-out rotate to 0deg, scale 1.04",
-        "purpose": "Patch hover."
-      },
-      {
-        "name": "field",
-        "value": ".2s border-color and background",
-        "purpose": "Roster field states."
+        "name": "lift",
+        "value": "transform .25s ease-out, translateY(-2px)",
+        "purpose": "Button hover lift; arrow nudges 3px."
       },
       {
         "name": "nudge",
-        "value": ".9s ease-in-out infinite, translateX 4px",
-        "purpose": "Submit arrow while loading."
+        "value": ".9s ease-in-out infinite, translateX(4px)",
+        "purpose": "Arrow pulse while submitting."
       },
       {
-        "name": "reduced-motion",
-        "value": "all animation and transition removed; smooth scroll off",
-        "purpose": "prefers-reduced-motion."
+        "name": "field",
+        "value": "border-color .2s, background-color .2s",
+        "purpose": "Input hover/focus."
       }
     ],
     "breakpoints": [
       {
-        "name": "tablet",
-        "value": "980px"
+        "name": "stack",
+        "value": "980px",
+        "purpose": "Single column: copy, card, checklist; card unrotated; directory one column."
       },
       {
         "name": "phone",
-        "value": "620px"
+        "value": "620px",
+        "purpose": "64px header, one-column checklist, hours leader hidden, centered footer."
       }
     ]
   },
   "components": [
     {
-      "name": "Red Button",
+      "name": "Red Enamel Button",
       "kind": "button",
-      "refersTo": "button-red",
-      "description": "Primary action: header Apply, roster submit, closing call.",
-      "html": "<div class=\"ds-stage\"><button class=\"ds-btn ds-btn-red\">Apply today <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button></div>",
-      "css": ":host{--navy:#14365b;--navy-deep:#0d2540;--navy-ink:#0a1c31;--red:#b62126;--red-deep:#8f1a1e;--red-bright:#e0474c;--wool:#f4f4f1;--heather:#dfe2e6;--paper:#fdfdfb;--rule:#c7d3e2;--ink:#10243b;--ink-soft:#3d5168;--on-felt-soft:#c8d3e1;--ease-out:cubic-bezier(.16,1,.3,1);--font-display:'Graduate','Rockwell',serif;--font-body:'Barlow',system-ui,sans-serif;--font-label:'Barlow Condensed','Barlow',system-ui,sans-serif} .ds-btn{display:inline-flex;align-items:center;gap:.55em;font-family:var(--font-display);font-size:1rem;text-transform:uppercase;letter-spacing:.03em;line-height:1;padding:1.05em 1.6em;border:0;border-radius:10px;cursor:pointer;box-shadow:0 2px 3px rgb(5 15 30 / .25),0 8px 18px -6px rgb(5 15 30 / .45);transition:transform .25s var(--ease-out),box-shadow .25s var(--ease-out),background-color .2s} .ds-btn:hover{transform:translateY(-2px);box-shadow:0 4px 6px rgb(5 15 30 / .25),0 14px 26px -8px rgb(5 15 30 / .5)} .ds-btn:active{transform:translateY(0)} .ds-btn:focus-visible{outline:3px solid var(--red-bright);outline-offset:3px} .ds-btn svg{width:1.1em;height:1.1em;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s var(--ease-out)} .ds-btn:hover svg{transform:translateX(3px)} .ds-stage{background-color:var(--navy);background-image:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%);padding:24px} .ds-btn-red{background:var(--red);color:#fff} .ds-btn-red:hover{background:var(--red-deep)}"
+      "refersTo": "button-primary",
+      "description": "The only call to action: lacquered red with a gold pinstripe.",
+      "html": "<a class=\"ds-btn\" href=\"#\">Apply today <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;gap:.55em;font:700 1.0625rem/1 var(--font-label);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:#fff;padding:1.05em 1.7em;border:0;border-radius:8px;background:linear-gradient(180deg,#c5292e 0%,var(--red) 55%,var(--red-deep) 100%);box-shadow:inset 0 0 0 3px var(--red-deep),inset 0 0 0 4.5px var(--gold),0 2px 3px rgb(0 0 0/.3),0 10px 22px -8px rgb(0 0 0/.55);transition:transform .25s var(--ease-out),box-shadow .25s var(--ease-out)}.ds-btn svg{width:1.1em;height:1.1em;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s var(--ease-out)}.ds-btn:hover{transform:translateY(-2px);box-shadow:inset 0 0 0 3px var(--red-deep),inset 0 0 0 4.5px var(--gold-light),0 4px 6px rgb(0 0 0/.3),0 16px 28px -10px rgb(0 0 0/.6)}.ds-btn:hover svg{transform:translateX(3px)}.ds-btn:active{transform:translateY(0)}.ds-btn:focus-visible{outline:3px solid var(--gold-light);outline-offset:3px}"
     },
     {
-      "name": "White Button",
-      "kind": "button",
-      "refersTo": "button-white",
-      "description": "Wool button for secondary actions on felt.",
-      "html": "<div class=\"ds-stage\"><button class=\"ds-btn ds-btn-white\">Apply now</button></div>",
-      "css": ":host{--navy:#14365b;--navy-deep:#0d2540;--navy-ink:#0a1c31;--red:#b62126;--red-deep:#8f1a1e;--red-bright:#e0474c;--wool:#f4f4f1;--heather:#dfe2e6;--paper:#fdfdfb;--rule:#c7d3e2;--ink:#10243b;--ink-soft:#3d5168;--on-felt-soft:#c8d3e1;--ease-out:cubic-bezier(.16,1,.3,1);--font-display:'Graduate','Rockwell',serif;--font-body:'Barlow',system-ui,sans-serif;--font-label:'Barlow Condensed','Barlow',system-ui,sans-serif} .ds-btn{display:inline-flex;align-items:center;gap:.55em;font-family:var(--font-display);font-size:1rem;text-transform:uppercase;letter-spacing:.03em;line-height:1;padding:1.05em 1.6em;border:0;border-radius:10px;cursor:pointer;box-shadow:0 2px 3px rgb(5 15 30 / .25),0 8px 18px -6px rgb(5 15 30 / .45);transition:transform .25s var(--ease-out),box-shadow .25s var(--ease-out),background-color .2s} .ds-btn:hover{transform:translateY(-2px);box-shadow:0 4px 6px rgb(5 15 30 / .25),0 14px 26px -8px rgb(5 15 30 / .5)} .ds-btn:active{transform:translateY(0)} .ds-btn:focus-visible{outline:3px solid var(--red-bright);outline-offset:3px} .ds-btn svg{width:1.1em;height:1.1em;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s var(--ease-out)} .ds-btn:hover svg{transform:translateX(3px)} .ds-stage{background-color:var(--navy);background-image:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%);padding:24px} .ds-btn-white{background:var(--wool);color:var(--navy)} .ds-btn-white:hover{background:#fff}"
+      "name": "Apply Within Card",
+      "kind": "card",
+      "refersTo": "card-apply",
+      "description": "The one card: the live application form, hung slightly askew in the window.",
+      "html": "<div class=\"ds-card\"><div class=\"ds-card-head\"><p class=\"ds-script\">Apply within</p><h2>Employment application</h2><p class=\"ds-sub\">Takes less than a minute.</p></div><div class=\"ds-field\"><label for=\"ds-n\">Full name</label><input id=\"ds-n\" placeholder=\"Jane Doe\"></div></div>",
+      "css": ".ds-card{background:var(--card);color:var(--ink);border-radius:4px;padding:30px 32px 26px;box-shadow:0 2px 4px rgb(0 0 0/.3),0 30px 60px -20px rgb(0 0 0/.7);rotate:-.8deg;max-width:420px;font-family:var(--font-body)}.ds-card-head{text-align:center;padding-bottom:16px;margin-bottom:6px;border-bottom:4px double var(--red)}.ds-script{font:400 2.75rem/1 var(--font-script);color:var(--red);margin:0 0 8px}.ds-card-head h2{font:400 1.375rem/1.15 var(--font-sign);color:var(--navy);margin:0}.ds-sub{color:var(--ink-soft);font-size:.9375rem;margin:4px 0 0}.ds-field{padding-top:14px}.ds-field label{display:block;font:700 .875rem var(--font-label);letter-spacing:.08em;text-transform:uppercase;color:var(--navy)}.ds-field input{width:100%;font:500 1.0625rem/1.3 var(--font-body);color:var(--ink);background:transparent;border:0;border-bottom:2px solid var(--rule);border-radius:0;padding:10px 2px 8px;caret-color:var(--red);transition:border-color .2s,background-color .2s}.ds-field input:hover{border-bottom-color:#9fb1c7}.ds-field input:focus{outline:none;border-bottom-color:var(--navy);background:#f1f5fa}.ds-field input:focus-visible{box-shadow:0 2px 0 var(--navy)}"
     },
     {
-      "name": "Roster Field",
+      "name": "Underline Field",
       "kind": "input",
-      "refersTo": "roster-field",
-      "description": "Underline field on the roster sheet with condensed navy label.",
-      "html": "<div class=\"ds-roster\"><label class=\"ds-label\" for=\"ds-n\">Full name</label><input id=\"ds-n\" class=\"ds-input\" placeholder=\"Jane Doe\"><label class=\"ds-label\" for=\"ds-e\" style=\"margin-top:14px\">Email address</label><input id=\"ds-e\" class=\"ds-input ds-invalid\" value=\"jane@\" aria-invalid=\"true\"><p class=\"ds-err\">Enter a valid email address.</p></div>",
-      "css": ":host{--navy:#14365b;--navy-deep:#0d2540;--navy-ink:#0a1c31;--red:#b62126;--red-deep:#8f1a1e;--red-bright:#e0474c;--wool:#f4f4f1;--heather:#dfe2e6;--paper:#fdfdfb;--rule:#c7d3e2;--ink:#10243b;--ink-soft:#3d5168;--on-felt-soft:#c8d3e1;--ease-out:cubic-bezier(.16,1,.3,1);--font-display:'Graduate','Rockwell',serif;--font-body:'Barlow',system-ui,sans-serif;--font-label:'Barlow Condensed','Barlow',system-ui,sans-serif} .ds-roster{background:var(--paper);color:var(--ink);border-radius:6px;padding:28px;box-shadow:0 2px 4px rgb(0 0 0 / .2),0 30px 60px -20px rgb(0 0 0 / .6);max-width:360px} .ds-label{display:block;font-family:var(--font-label);font-weight:700;font-size:.875rem;letter-spacing:.08em;text-transform:uppercase;color:var(--navy)} .ds-input{width:100%;font:500 1.0625rem/1.3 var(--font-body);color:var(--ink);background:transparent;border:0;border-bottom:2px solid var(--rule);border-radius:0;padding:10px 2px 8px;caret-color:var(--red);transition:border-color .2s,background-color .2s} .ds-input::placeholder{color:#5a6a7e} .ds-input:hover{border-bottom-color:#9fb1c7} .ds-input:focus{outline:none;border-bottom-color:var(--navy);background:#f1f5fa} .ds-input:focus-visible{box-shadow:0 2px 0 var(--navy)} .ds-invalid{border-bottom-color:var(--red);background:#fdf1f1} .ds-err{font-family:var(--font-body);font-size:.875rem;font-weight:600;color:var(--red);margin:6px 0 0}"
+      "refersTo": "input-field",
+      "description": "Pencil-rule underline input on card stock; navy on focus, red over error wash when invalid.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-e\">Email address</label><input id=\"ds-e\" aria-invalid=\"true\" value=\"jane@\"><p class=\"ds-err\">Enter a valid email.</p></div>",
+      "css": ".ds-field{background:var(--card);padding:14px 20px;font-family:var(--font-body)}.ds-field label{display:block;font:700 .875rem var(--font-label);letter-spacing:.08em;text-transform:uppercase;color:var(--navy)}.ds-field input{width:100%;font:500 1.0625rem/1.3 var(--font-body);color:var(--ink);background:transparent;border:0;border-bottom:2px solid var(--rule);padding:10px 2px 8px;caret-color:var(--red)}.ds-field input:focus{outline:none;border-bottom-color:var(--navy);background:#f1f5fa}.ds-field input[aria-invalid=true]{border-bottom-color:var(--red);background:var(--error-wash,#fdf1f1)}.ds-err{font-size:.875rem;font-weight:600;color:var(--red);margin:6px 0 0}"
     },
     {
-      "name": "Navigation Header",
-      "kind": "nav",
-      "refersTo": "patch-logo",
-      "description": "Sticky locker-navy header: logo on a white patch, small red Apply button.",
-      "html": "<header class=\"ds-head\"><span class=\"ds-logo\">CAR ACCIDENT ATTORNEY</span><a class=\"ds-btn ds-btn-red ds-sm\" href=\"#\">Apply now</a></header>",
-      "css": ":host{--navy:#14365b;--navy-deep:#0d2540;--navy-ink:#0a1c31;--red:#b62126;--red-deep:#8f1a1e;--red-bright:#e0474c;--wool:#f4f4f1;--heather:#dfe2e6;--paper:#fdfdfb;--rule:#c7d3e2;--ink:#10243b;--ink-soft:#3d5168;--on-felt-soft:#c8d3e1;--ease-out:cubic-bezier(.16,1,.3,1);--font-display:'Graduate','Rockwell',serif;--font-body:'Barlow',system-ui,sans-serif;--font-label:'Barlow Condensed','Barlow',system-ui,sans-serif} .ds-btn{display:inline-flex;align-items:center;gap:.55em;font-family:var(--font-display);font-size:1rem;text-transform:uppercase;letter-spacing:.03em;line-height:1;padding:1.05em 1.6em;border:0;border-radius:10px;cursor:pointer;box-shadow:0 2px 3px rgb(5 15 30 / .25),0 8px 18px -6px rgb(5 15 30 / .45);transition:transform .25s var(--ease-out),box-shadow .25s var(--ease-out),background-color .2s} .ds-btn:hover{transform:translateY(-2px);box-shadow:0 4px 6px rgb(5 15 30 / .25),0 14px 26px -8px rgb(5 15 30 / .5)} .ds-btn:active{transform:translateY(0)} .ds-btn:focus-visible{outline:3px solid var(--red-bright);outline-offset:3px} .ds-btn svg{width:1.1em;height:1.1em;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s var(--ease-out)} .ds-btn:hover svg{transform:translateX(3px)} .ds-head{display:flex;align-items:center;justify-content:space-between;height:76px;padding:0 24px;background:var(--navy-ink);border-bottom:1px solid rgb(255 255 255 / .08)} .ds-logo{background:#fff;color:var(--navy);padding:12px 14px;border-radius:10px;box-shadow:0 2px 6px rgb(0 0 0 / .3);font:700 .75rem var(--font-label);letter-spacing:.06em} .ds-btn-red{background:var(--red);color:#fff;text-decoration:none} .ds-btn-red:hover{background:var(--red-deep)} .ds-sm{font-size:.8125rem;padding:.95em 1.25em}"
-    },
-    {
-      "name": "Twill Headline",
+      "name": "Gilded Lettering",
       "kind": "custom",
       "refersTo": "display",
-      "description": "Two-layer twill lettering: red outer layer, wool face with navy keyline. Placeholder: the shipped build adds the twill raster via SVG filter and a clipped texture copy.",
-      "html": "<div class=\"ds-stage\"><h2 class=\"ds-twill\"><span class=\"ds-back\" aria-hidden=\"true\">Build your career</span><span class=\"ds-front\">Build your career</span></h2></div>",
-      "css": ":host{--navy:#14365b;--navy-deep:#0d2540;--navy-ink:#0a1c31;--red:#b62126;--red-deep:#8f1a1e;--red-bright:#e0474c;--wool:#f4f4f1;--heather:#dfe2e6;--paper:#fdfdfb;--rule:#c7d3e2;--ink:#10243b;--ink-soft:#3d5168;--on-felt-soft:#c8d3e1;--ease-out:cubic-bezier(.16,1,.3,1);--font-display:'Graduate','Rockwell',serif;--font-body:'Barlow',system-ui,sans-serif;--font-label:'Barlow Condensed','Barlow',system-ui,sans-serif} .ds-stage{background-color:var(--navy);background-image:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%);padding:32px} .ds-twill{display:inline-grid;margin:0;font-family:var(--font-display);font-weight:400;font-size:3rem;line-height:1.02;letter-spacing:.03em;text-transform:uppercase} .ds-back,.ds-front{grid-area:1/1} .ds-back{color:var(--red);text-shadow:calc(.1em*1.000) calc(.1em*0.000) 0 var(--red),calc(.1em*0.707) calc(.1em*0.707) 0 var(--red),calc(.1em*0.000) calc(.1em*1.000) 0 var(--red),calc(.1em*-0.707) calc(.1em*0.707) 0 var(--red),calc(.1em*-1.000) calc(.1em*0.000) 0 var(--red),calc(.1em*-0.707) calc(.1em*-0.707) 0 var(--red),calc(.1em*0.000) calc(.1em*-1.000) 0 var(--red),calc(.1em*0.707) calc(.1em*-0.707) 0 var(--red),0 .1em .16em rgb(5 15 30 / .45)} .ds-front{color:var(--wool);text-shadow:calc(.035em*1.000) calc(.035em*0.000) 0 var(--navy),calc(.035em*0.707) calc(.035em*0.707) 0 var(--navy),calc(.035em*0.000) calc(.035em*1.000) 0 var(--navy),calc(.035em*-0.707) calc(.035em*0.707) 0 var(--navy),calc(.035em*-1.000) calc(.035em*0.000) 0 var(--navy),calc(.035em*-0.707) calc(.035em*-0.707) 0 var(--navy),calc(.035em*0.000) calc(.035em*-1.000) 0 var(--navy),calc(.035em*0.707) calc(.035em*-0.707) 0 var(--navy)}"
+      "description": "Sign painter's gold leaf with red outline ring and block shade; one glint on load.",
+      "html": "<div class=\"ds-glass\"><h1 class=\"ds-gilt\"><span class=\"ds-back\" aria-hidden=\"true\">Build your career</span><span class=\"ds-front\">Build your career</span></h1></div>",
+      "css": ".ds-glass{background:var(--glass);padding:32px}.ds-gilt{--ol:.045em;display:inline-grid;font:400 3.5rem/1.08 var(--font-sign);letter-spacing:.01em;margin:0}.ds-gilt>span{grid-area:1/1}.ds-front{position:relative;z-index:1;color:transparent;background:linear-gradient(105deg,transparent 42%,rgb(255 250 230/.85) 50%,transparent 58%) 160% 0/250% 100% no-repeat,var(--leaf) 0 0/1.7em 1.7em;-webkit-background-clip:text;background-clip:text;animation:ds-glint 1.8s var(--ease-out) .5s both}.ds-back{color:var(--red);text-shadow:var(--ol) 0 0 var(--red),0 var(--ol) 0 var(--red),calc(var(--ol)*-1) 0 0 var(--red),0 calc(var(--ol)*-1) 0 var(--red),calc(var(--ol)*.7) calc(var(--ol)*.7) 0 var(--red),calc(var(--ol)*-.7) calc(var(--ol)*.7) 0 var(--red),calc(var(--ol)*-.7) calc(var(--ol)*-.7) 0 var(--red),calc(var(--ol)*.7) calc(var(--ol)*-.7) 0 var(--red),.06em .06em 0 var(--shade),.075em .075em 0 var(--shade),.09em .09em 0 var(--shade),.105em .105em 0 var(--shade),.12em .12em 0 var(--shade)}@keyframes ds-glint{from{background-position:160% 0,0 0}to{background-position:-60% 0,0 0}}@media (prefers-reduced-motion:reduce){.ds-front{animation:none}}"
     },
     {
-      "name": "Patch",
-      "kind": "card",
-      "refersTo": "patch",
-      "description": "Sewn patch: thread-colored rim around a felt body, tilted, straightens on hover. Placeholder: the shipped build uses merrow, felt-grain and satin raster tiles with an SVG emblem mask.",
-      "html": "<div class=\"ds-stage\"><span class=\"ds-patch\"></span><span class=\"ds-patch ds-red\"></span><span class=\"ds-patch ds-navy ds-shield\"></span></div>",
-      "css": ":host{--navy:#14365b;--navy-deep:#0d2540;--navy-ink:#0a1c31;--red:#b62126;--red-deep:#8f1a1e;--red-bright:#e0474c;--wool:#f4f4f1;--heather:#dfe2e6;--paper:#fdfdfb;--rule:#c7d3e2;--ink:#10243b;--ink-soft:#3d5168;--on-felt-soft:#c8d3e1;--ease-out:cubic-bezier(.16,1,.3,1);--font-display:'Graduate','Rockwell',serif;--font-body:'Barlow',system-ui,sans-serif;--font-label:'Barlow Condensed','Barlow',system-ui,sans-serif} .ds-stage{background-color:var(--navy);background-image:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%);padding:32px;display:flex;gap:28px} .ds-patch{--base:var(--wool);--thread:var(--red);position:relative;width:104px;height:104px;border-radius:50%;background:var(--thread);rotate:-5deg;box-shadow:0 3px 4px rgb(3 10 20 / .35),0 12px 22px -8px rgb(3 10 20 / .55);transition:rotate .45s var(--ease-out),scale .45s var(--ease-out)} .ds-patch::after{content:'';position:absolute;inset:7px;border-radius:inherit;background:var(--base);box-shadow:inset 0 1px 2px rgb(0 0 0 / .25)} .ds-patch:hover{rotate:0deg;scale:1.04} .ds-red{--base:var(--red);--thread:var(--wool);rotate:5deg} .ds-navy{--base:var(--navy-deep);--thread:var(--red)} .ds-shield{border-radius:16px 16px 50% 50% / 16px 16px 62% 62%;rotate:3deg}"
-    },
-    {
-      "name": "Checklist",
-      "kind": "chip",
-      "refersTo": "checklist",
-      "description": "Condensed uppercase benefit list led by red check discs.",
-      "html": "<div class=\"ds-stage\"><ul class=\"ds-list\"><li><svg viewBox=\"0 0 24 24\"><path d=\"M20 6 9 17l-5-5\"/></svg>Flexible schedule</li><li><svg viewBox=\"0 0 24 24\"><path d=\"M20 6 9 17l-5-5\"/></svg>Training provided</li></ul></div>",
-      "css": ":host{--navy:#14365b;--navy-deep:#0d2540;--navy-ink:#0a1c31;--red:#b62126;--red-deep:#8f1a1e;--red-bright:#e0474c;--wool:#f4f4f1;--heather:#dfe2e6;--paper:#fdfdfb;--rule:#c7d3e2;--ink:#10243b;--ink-soft:#3d5168;--on-felt-soft:#c8d3e1;--ease-out:cubic-bezier(.16,1,.3,1);--font-display:'Graduate','Rockwell',serif;--font-body:'Barlow',system-ui,sans-serif;--font-label:'Barlow Condensed','Barlow',system-ui,sans-serif} .ds-stage{background-color:var(--navy);background-image:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%);padding:24px;color:var(--wool)} .ds-list{list-style:none;padding:0;margin:0;display:grid;gap:12px;font-family:var(--font-label);font-weight:700;font-size:1.125rem;letter-spacing:.02em;text-transform:uppercase} .ds-list li{display:flex;align-items:center;gap:10px} .ds-list svg{width:26px;height:26px;padding:5px;box-sizing:border-box;background:var(--red);color:#fff;border-radius:50%;fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}"
-    },
-    {
-      "name": "Rib Cuff",
+      "name": "Motto Sign",
       "kind": "custom",
-      "refersTo": "rib-cuff",
-      "description": "30px knit rib divider between bands. Placeholder stripes approximate the shipped rib.webp tile.",
-      "html": "<div class=\"ds-rib\" aria-hidden=\"true\"></div>",
-      "css": ":host{--navy:#14365b;--navy-deep:#0d2540;--navy-ink:#0a1c31;--red:#b62126;--red-deep:#8f1a1e;--red-bright:#e0474c;--wool:#f4f4f1;--heather:#dfe2e6;--paper:#fdfdfb;--rule:#c7d3e2;--ink:#10243b;--ink-soft:#3d5168;--on-felt-soft:#c8d3e1;--ease-out:cubic-bezier(.16,1,.3,1);--font-display:'Graduate','Rockwell',serif;--font-body:'Barlow',system-ui,sans-serif;--font-label:'Barlow Condensed','Barlow',system-ui,sans-serif} .ds-rib{height:30px;background:linear-gradient(180deg,var(--navy-ink) 0 20%,var(--wool) 20% 37%,var(--red) 37% 63%,var(--wool) 63% 80%,var(--navy-ink) 80%)}"
+      "refersTo": "sign-enamel",
+      "description": "Flat red porcelain sign with white rim; never carries the pinstripe.",
+      "html": "<p class=\"ds-sign\"><strong>You don't need experience to start.</strong> We provide the training — <span>you build the future.</span></p>",
+      "css": ".ds-sign{background:var(--red);color:#fff;border-radius:10px;padding:24px 40px;text-align:center;font:700 1.375rem var(--font-label);letter-spacing:.06em;text-transform:uppercase;box-shadow:inset 0 0 0 6px var(--red),inset 0 0 0 9px #fff,0 3px 5px rgb(0 0 0/.35);margin:0}.ds-sign span{color:#fcefc6}"
+    },
+    {
+      "name": "Hours Plaque",
+      "kind": "custom",
+      "refersTo": "plaque-enamel",
+      "description": "Steps as a porcelain hours plaque with dotted leaders.",
+      "html": "<div class=\"ds-plaque\"><h2>From application to growth</h2><ol><li><span class=\"n\">1</span><span class=\"t\">Apply</span><span class=\"d\"></span><span class=\"x\">Fill out our short application form.</span></li><li><span class=\"n\">2</span><span class=\"t\">Interview</span><span class=\"d\"></span><span class=\"x\">Meet our team.</span></li></ol></div>",
+      "css": ".ds-plaque{background:var(--enamel);color:var(--ink);border-radius:18px;padding:48px 48px;box-shadow:inset 0 0 0 10px var(--enamel),inset 0 0 0 12px var(--navy),0 4px 6px rgb(0 0 0/.3),0 30px 50px -20px rgb(0 0 0/.6);font-family:var(--font-body)}.ds-plaque h2{font:400 2rem/1.1 var(--font-sign);color:var(--navy);text-align:center;padding-bottom:22px;margin:0 0 10px;border-bottom:4px double var(--red)}.ds-plaque ol{list-style:none;padding:0;margin:0}.ds-plaque li{display:grid;grid-template-columns:2.6rem max-content minmax(24px,1fr) minmax(0,18rem);align-items:baseline;gap:14px;padding-block:18px;border-bottom:1px solid #d9dde3}.ds-plaque li:last-child{border-bottom:0}.ds-plaque .n{font:400 1.75rem/1 var(--font-sign);color:var(--red)}.ds-plaque .t{font:400 1.5rem/1.1 var(--font-sign);color:var(--navy)}.ds-plaque .d{border-bottom:3px dotted #9aa6b6;transform:translateY(-.3em)}.ds-plaque .x{color:var(--ink-soft)}"
+    },
+    {
+      "name": "Glass-Door Directory",
+      "kind": "custom",
+      "refersTo": "directory-entry",
+      "description": "Benefits as gilded names painted on glass between gold pinstripe rules.",
+      "html": "<dl class=\"ds-dir\"><div><dt>Training</dt><dd>Comprehensive training and the tools you need.</dd></div><div><dt>Flexibility</dt><dd>Flexible schedules that fit your lifestyle.</dd></div></dl>",
+      "css": ".ds-dir{background:var(--glass);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:48px;border-top:4px double var(--gold-dim);margin:0;padding:0 24px 24px;font-family:var(--font-body)}.ds-dir>div{display:grid;gap:8px;padding-block:24px;border-bottom:1px solid rgb(214 169 79/.28)}.ds-dir dt{font:400 1.625rem/1.1 var(--font-sign);color:var(--gold);text-shadow:1px 0 0 var(--red),-1px 0 0 var(--red),0 1px 0 var(--red),0 -1px 0 var(--red),2px 2px 0 var(--shade)}.ds-dir dd{margin:0;color:var(--on-glass-soft);max-width:40ch}"
+    },
+    {
+      "name": "Logo Plate",
+      "kind": "custom",
+      "refersTo": "logo-plate",
+      "description": "The supplied logo, untouched, on a white enamel plate.",
+      "html": "<span class=\"ds-plate\"><img src=\"assets/logo-horizontal.webp\" alt=\"Car Accident Attorney\" height=\"46\"></span>",
+      "css": ".ds-plate{display:inline-block;background:#fff;padding:6px 12px;border-radius:8px;box-shadow:inset 0 0 0 1.5px rgb(20 54 91/.25),0 2px 6px rgb(0 0 0/.35)}.ds-plate img{height:46px;width:auto;display:block}"
     }
   ],
   "narrative": {
-    "northStar": "The Varsity Roster",
-    "overview": "Joining CAA is presented as making the team. Every surface is a physical piece of American varsity kit: navy wool felt as the ground, heat-sealed two-layer twill for lettering, knit rib cuffs between sections, merrowed patches with satin-stitch emblems, jersey numerals for steps, and a white roster sheet as the application. The lion shield from the logo is the mascot. The system is material first: textures are real raster tiles (procedural, with provenance sidecars in `html/assets/tex/`), and the CSS layers them; it never fakes thread with dashed borders.\n\nDensity is low and confident. Big collegiate block lettering carries the hierarchy, the body copy stays plain and short in Barlow, and red is spent only where a thread or an action would be red on a letterman jacket. Objects sit on the felt slightly askew, as if sewn or laid down by hand, and settle straight when touched.\n\nThe logo is an identity asset used exactly as supplied, always on a white patch; it is never recolored, traced or rebuilt in twill.",
+    "northStar": "The Lit Storefront Window",
+    "overview": "The whole page is one pane of shop-window glass at night: deep navy with a single soft diagonal reflection. On the glass, sign painter's lettering in Ultra is gilded with burnished leaf, ringed in red and stepped with a dark-red block shade. Behind it hang real objects: one white application card, a red porcelain sign, an enamel plaque. Density is low; objects carry their own materials through inset rims and soft drop shadows. Brand inks are the logo's navy and red; gold is the sign painter's metal, never a flat UI fill.",
     "keyCharacteristics": [
-      "Navy felt ground with a raster fiber grain; heather and wool as the only secondary grounds.",
-      "Display type is always two-layer twill: wool face, navy keyline, red outer layer (inverted on light grounds).",
-      "Sections are divided by knit rib cuffs, not rules or gradients.",
-      "Benefits are patches in four silhouettes at varied size and tilt; steps are twill jersey numerals.",
-      "The form is a ruled roster sheet on paper, slightly rotated on desktop.",
-      "Motion is sewing and settling: one outline reveal on load, patches straighten on hover."
+      "Night glass ground with one diagonal reflection",
+      "Gilded Ultra lettering: leaf, red ring, block shade",
+      "One white card, which is the live form, hung at -0.8deg",
+      "Porcelain enamel plates for motto and steps",
+      "Gold pinstripe double rules",
+      "Barlow body, Barlow Condensed labels, Yellowtail sign phrases"
     ],
     "rules": [
       {
-        "name": "The Thread Not Ground Rule",
-        "body": "Red is thread and action: buttons, outlines, accent letters, patch rims and patch fills. It never covers a section ground.",
+        "name": "The Metal Is Not Paint Rule",
+        "body": "Gold appears as leaf, pinstripe, tick or hairline; never as a surface fill.",
         "section": "colors"
       },
       {
-        "name": "The Three Grounds Rule",
-        "body": "A section sits on navy felt, heather, or wool. Paper is reserved for the roster sheet; locker navy for header, footer and cuffs.",
+        "name": "The Two Inks Rule",
+        "body": "Red and navy are the only chromatic inks besides gold; no added accent hues.",
         "section": "colors"
       },
       {
-        "name": "The Twill Rule",
-        "body": "Display, headline and numeral type is set as two-layer twill: a back copy (outer layer, red, 0.1em ring, woven through the `#twill-weave` SVG filter), a front copy (face with a 0.035em keyline) and a texture copy clipped to the twill tile. On light grounds use the on-light variant: navy face, wool keyline, 0.075em outline, inverted screen texture.",
+        "name": "The Lettering Is Painted Rule",
+        "body": "Ultra on glass is always gilded with all three layers; on enamel or card it is flat navy or red.",
         "section": "typography"
       },
       {
-        "name": "The One Red Word Rule",
-        "body": "Inside a twill line, a red word (red face, 0.05em wool keyline) marks the brand name only.",
+        "name": "The One Flourish Rule",
+        "body": "Yellowtail only for the card's sign phrase, success state and footer tagline; never above section headings.",
         "section": "typography"
       },
       {
-        "name": "The Laid-On Rule",
-        "body": "Every shadow pairs a contact shadow with a blurred, negatively spread drop. No hard offset shadows, no colored glows.",
+        "name": "The One Pane Rule",
+        "body": "The glass runs unbroken from header to final call; objects hang on it instead of section bands.",
+        "section": "layout"
+      },
+      {
+        "name": "The Single Reflection Rule",
+        "body": "Exactly one diagonal reflection on the glass; no glows, noise or extra light.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Shade Belongs To Letters Rule",
+        "body": "Hard offset shadows only as block shade on Ultra lettering; objects cast soft shadows.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Do render every material from its raster tile: felt-grain (400px, soft-light), twill (32px), merrow (10px), satin (6 to 8px), rib (12x30). New tiles ship with a provenance sidecar.",
-      "Do set display, section and numeral type as two-layer twill, switching to the on-light variant on heather or wool.",
-      "Do divide full-bleed bands with a 30px rib cuff.",
-      "Do keep red to thread and action: buttons, twill outlines, the brand word, checklist discs, patch rims and fills.",
-      "Do tilt sewn objects slightly (between -6deg and 7deg) and let them settle straight on hover.",
-      "Do show the logo and the lion shield exactly as supplied, on white patches.",
-      "Do keep the application on the roster sheet: paper, underline fields, condensed navy labels."
+      "Do gild every Ultra heading on the glass with leaf, red ring and block shade.",
+      "Do hang new content as objects on the one pane with soft shadows and inset rims.",
+      "Do use double rules for dividers: red on light surfaces, gold-dim on glass.",
+      "Do keep the application card the only card and keep the form in the first viewport.",
+      "Do use stroke icons only where they do a job (tick, arrow, lock, alert).",
+      "Do honor reduced motion: glint, transitions and smooth scroll off."
     ],
     "donts": [
-      "Don't draw stitching with dashed or dotted CSS borders; thread comes only from the merrow, satin and rib rasters.",
-      "Don't use red as a section ground.",
-      "Don't recolor, trace or re-letter the logo or the lion shield.",
-      "Don't use hard offset shadows or colored glows; shadows are contact plus soft drop, navy-tinted.",
-      "Don't set Graduate in lowercase or for running copy; body, labels and form text stay in Barlow.",
-      "Don't set any twill type larger than 6rem."
+      "Don't build grids of icon cards or tiles.",
+      "Don't use a stock-photo hero.",
+      "Don't give non-interactive plates the gold pinstripe; it means press.",
+      "Don't add a second reflection, glow or texture to the glass.",
+      "Don't fill surfaces with gold or add a new accent hue.",
+      "Don't stack small labels or script lines above section headings.",
+      "Don't alter, recolor or crop the CAA logo or set it on the glass without its plate."
     ]
   }
 }
