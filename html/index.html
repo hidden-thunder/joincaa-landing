@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Careers at CAA — Join the Car Accident Attorney Team</title>
-  <meta name="description" content="Join CAA. Monthly base pay plus bonuses, flexible schedule and full training — no previous experience required. Apply in under a minute.">
+  <meta name="description" content="Join CAA. Monthly base pay plus bonuses, flexible schedule and training provided — no previous experience required. Apply in under a minute.">
   <meta name="theme-color" content="#14365b">
   <link rel="canonical" href="https://www.joincaa.team/">
 
@@ -21,10 +21,8 @@
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap">
-  <link rel="preload" as="image" href="assets/16071.webp" fetchpriority="high">
+  <link rel="preload" href="fonts/graduate-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/barlow-500.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/scripts.js" defer></script>
 </head>
@@ -32,60 +30,72 @@
 
   <!-- SVG icon sprite (Lucide-style, ISC license) -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
     <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
     <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
     <symbol id="i-dollar" viewBox="0 0 24 24"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></symbol>
     <symbol id="i-trend" viewBox="0 0 24 24"><path d="M22 7 13.5 15.5 8.5 10.5 2 17"/><path d="M16 7h6v6"/></symbol>
     <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
     <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
-    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol>
-    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
-    <symbol id="i-board" viewBox="0 0 24 24"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m7 21 5-5 5 5"/></symbol>
-    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
     <symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
     <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></symbol>
-    <symbol id="i-party" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  </svg>
+
+  <!-- Twill weave filter for the outer lettering layer -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <filter id="twill-weave" x="-10%" y="-20%" width="120%" height="140%" color-interpolation-filters="sRGB">
+      <feImage href="assets/tex/twill.webp" x="0" y="0" width="32" height="32" result="t"/>
+      <feTile in="t" result="tt"/>
+      <feComponentTransfer in="tt" result="tl">
+        <feFuncR type="linear" slope=".35" intercept=".65"/>
+        <feFuncG type="linear" slope=".35" intercept=".65"/>
+        <feFuncB type="linear" slope=".35" intercept=".65"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="tl" mode="multiply" result="m"/>
+      <feComposite in="m" in2="SourceGraphic" operator="in"/>
+    </filter>
   </svg>
 
   <a class="skip-link" href="#apply">Skip to application</a>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#top" class="brand" aria-label="Car Accident Attorney — home">
+      <a href="#top" class="patch-logo" aria-label="Car Accident Attorney — home">
         <img src="assets/logo-horizontal.webp" alt="Car Accident Attorney" width="480" height="166">
       </a>
-      <a href="#apply" class="btn btn-primary btn-sm">Apply now</a>
+      <a href="#apply" class="btn btn-red btn-sm">Apply now</a>
     </div>
   </header>
 
   <main id="top">
-    <!-- HERO + APPLICATION FORM -->
-    <section class="hero">
-      <img class="hero-bg" src="assets/16071.webp" alt="" width="1000" height="667" fetchpriority="high">
+    <!-- HERO: felt + roster sheet -->
+    <section class="hero felt">
       <div class="container hero-grid">
 
         <div class="hero-copy">
-          <p class="eyebrow eyebrow-light"><span class="dot"></span> We're hiring</p>
-          <h1>Build your career<br>with <span class="accent">CAA</span></h1>
+          <h1 class="twill" data-sew>
+            <span class="tw-back" aria-hidden="true">Build your career with CAA</span>
+            <span class="tw-front">Build your career with <span class="tw-red">CAA</span></span><span class="tw-tex" aria-hidden="true">Build your career with CAA</span>
+          </h1>
           <p class="lead">
             We're looking for motivated people ready to learn, grow, and join a dynamic team.
             <strong>No previous experience required</strong> — we provide the training and tools you need to get started.
           </p>
-          <ul class="checklist">
-            <li><svg class="icon"><use href="#i-check"/></svg> Monthly base pay + bonuses</li>
-            <li><svg class="icon"><use href="#i-check"/></svg> Flexible schedule</li>
-            <li><svg class="icon"><use href="#i-check"/></svg> Paid training provided</li>
-            <li><svg class="icon"><use href="#i-check"/></svg> Real career growth</li>
-            <li><svg class="icon"><use href="#i-check"/></svg> Supportive team environment</li>
-          </ul>
         </div>
 
-        <!-- Application card -->
-        <div class="apply-card" id="apply" tabindex="-1">
-          <div class="apply-head">
-            <img src="assets/shield.webp" alt="" width="56" height="56">
+        <ul class="checklist" aria-label="What you get">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Monthly base pay + bonuses</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Flexible schedule</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Training provided</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Career growth opportunities</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Supportive team environment</li>
+        </ul>
+
+        <!-- Roster sheet = application form -->
+        <div class="roster" id="apply" tabindex="-1">
+          <div class="roster-head">
+            <img src="assets/shield.webp" alt="" width="64" height="64">
             <div>
               <h2>Employment application</h2>
               <p>Takes less than a minute.</p>
@@ -123,20 +133,20 @@
             </div>
 
             <p class="form-alert" role="alert" hidden>
-              <svg class="icon"><use href="#i-alert"/></svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>
               <span>We couldn't send your application. Please try again.</span>
             </p>
 
-            <button type="submit" class="btn btn-primary btn-block">
+            <button type="submit" class="btn btn-red btn-block">
               <span class="btn-label">Submit application</span>
-              <svg class="icon"><use href="#i-arrow"/></svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
             </button>
 
-            <p class="privacy"><svg class="icon"><use href="#i-lock"/></svg> Your information is private and only used for recruiting.</p>
+            <p class="privacy"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg> Your information is private and only used for recruiting.</p>
           </form>
 
           <div class="apply-success" hidden tabindex="-1">
-            <div class="success-badge"><svg class="icon"><use href="#i-party"/></svg></div>
+            <div class="success-badge" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></div>
             <h2>Thank you!</h2>
             <p>Your application has been received. Our recruitment team will review your information and contact you soon.</p>
           </div>
@@ -144,108 +154,120 @@
       </div>
     </section>
 
-    <!-- HIGHLIGHT STRIP -->
-    <section class="strip">
-      <div class="container strip-inner">
-        <p><strong>You don't need experience to start.</strong> We provide the training — <span class="accent">you build the future.</span></p>
+    <!-- Knit cuff + no-experience line -->
+    <div class="rib" aria-hidden="true"></div>
+    <section class="motto">
+      <div class="container">
+        <p><strong>You don't need experience to start.</strong> We provide the training — <span>you build the future.</span></p>
       </div>
     </section>
+    <div class="rib" aria-hidden="true"></div>
 
-    <!-- BENEFITS -->
-    <section class="section section-muted">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">Why join CAA?</p>
-          <h2>More than a job, a place to grow</h2>
-        </header>
+    <!-- BENEFITS: patches sewn on a felt panel -->
+    <section class="section felt" aria-labelledby="why-title">
+      <div class="container benefits-grid">
+        <h2 id="why-title" class="section-title twill">
+          <span class="tw-back" aria-hidden="true">More than a job, a place to grow</span>
+          <span class="tw-front">More than a job, a place to grow</span><span class="tw-tex" aria-hidden="true">More than a job, a place to grow</span>
+        </h2>
 
-        <div class="benefits">
-          <article class="benefit">
-            <span class="benefit-icon"><svg class="icon"><use href="#i-cap"/></svg></span>
+        <ul class="patches">
+          <li class="patch-item">
+            <span class="patch"><span class="emb emb-cap"></span></span>
             <h3>Training</h3>
             <p>Comprehensive training and the tools you need to succeed from day one.</p>
-          </article>
-          <article class="benefit">
-            <span class="benefit-icon"><svg class="icon"><use href="#i-clock"/></svg></span>
+          </li>
+          <li class="patch-item">
+            <span class="patch patch-red"><span class="emb emb-clock"></span></span>
             <h3>Flexibility</h3>
             <p>Flexible schedules that fit your lifestyle.</p>
-          </article>
-          <article class="benefit">
-            <span class="benefit-icon"><svg class="icon"><use href="#i-dollar"/></svg></span>
+          </li>
+          <li class="patch-item">
+            <span class="patch patch-navy"><span class="emb emb-dollar"></span></span>
             <h3>Income + bonuses</h3>
             <p>Competitive base pay with performance bonuses you can unlock.</p>
-          </article>
-          <article class="benefit">
-            <span class="benefit-icon"><svg class="icon"><use href="#i-trend"/></svg></span>
+          </li>
+          <li class="patch-item">
+            <span class="patch"><span class="emb emb-trend"></span></span>
             <h3>Growth</h3>
             <p>A clear path to advance, lead a team, and build your future.</p>
-          </article>
-          <article class="benefit">
-            <span class="benefit-icon"><svg class="icon"><use href="#i-users"/></svg></span>
+          </li>
+          <li class="patch-item">
+            <span class="patch patch-navy"><span class="emb emb-users"></span></span>
             <h3>Community</h3>
             <p>A supportive team that celebrates wins together.</p>
-          </article>
-          <article class="benefit">
-            <span class="benefit-icon"><svg class="icon"><use href="#i-heart"/></svg></span>
+          </li>
+          <li class="patch-item">
+            <span class="patch patch-red"><span class="emb emb-heart"></span></span>
             <h3>Impact</h3>
             <p>Help connect accident victims with the legal help they deserve.</p>
-          </article>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <!-- PROCESS -->
-    <section class="section">
+    <!-- PROCESS: jersey numerals -->
+    <section class="section heather" aria-labelledby="steps-title">
       <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">How it works</p>
-          <h2>From application to growth in 4 steps</h2>
-        </header>
+        <h2 id="steps-title" class="section-title twill twill-on-light">
+          <span class="tw-back" aria-hidden="true">From application to growth in 4 steps</span>
+          <span class="tw-front">From application to growth in 4 steps</span><span class="tw-tex" aria-hidden="true">From application to growth in 4 steps</span>
+        </h2>
 
-        <ol class="steps">
-          <li class="step">
-            <span class="step-num">01</span>
-            <svg class="icon step-icon"><use href="#i-file"/></svg>
-            <h3>Apply</h3>
-            <p>Fill out our short application form.</p>
+        <ol class="jerseys">
+          <li class="jersey">
+            <span class="jersey-num twill twill-on-light" aria-hidden="true"><span class="tw-back">1</span><span class="tw-front">1</span><span class="tw-tex">1</span></span>
+            <div>
+              <h3>Apply</h3>
+              <p>Fill out our short application form.</p>
+            </div>
           </li>
-          <li class="step">
-            <span class="step-num">02</span>
-            <svg class="icon step-icon"><use href="#i-chat"/></svg>
-            <h3>Interview</h3>
-            <p>Meet our team and learn more about CAA.</p>
+          <li class="jersey">
+            <span class="jersey-num twill twill-on-light" aria-hidden="true"><span class="tw-back">2</span><span class="tw-front">2</span><span class="tw-tex">2</span></span>
+            <div>
+              <h3>Interview</h3>
+              <p>Meet our team and learn more about CAA.</p>
+            </div>
           </li>
-          <li class="step">
-            <span class="step-num">03</span>
-            <svg class="icon step-icon"><use href="#i-board"/></svg>
-            <h3>Training</h3>
-            <p>Get trained, equipped, and ready to start.</p>
+          <li class="jersey">
+            <span class="jersey-num twill twill-on-light" aria-hidden="true"><span class="tw-back">3</span><span class="tw-front">3</span><span class="tw-tex">3</span></span>
+            <div>
+              <h3>Training</h3>
+              <p>Get trained, equipped, and ready to start.</p>
+            </div>
           </li>
-          <li class="step">
-            <span class="step-num">04</span>
-            <svg class="icon step-icon"><use href="#i-award"/></svg>
-            <h3>Grow</h3>
-            <p>Achieve results, build your team, and advance your career.</p>
+          <li class="jersey">
+            <span class="jersey-num twill twill-on-light" aria-hidden="true"><span class="tw-back">4</span><span class="tw-front">4</span><span class="tw-tex">4</span></span>
+            <div>
+              <h3>Grow</h3>
+              <p>Achieve results, build your team, and advance your career.</p>
+            </div>
           </li>
         </ol>
       </div>
     </section>
 
-    <!-- FINAL CTA -->
-    <section class="cta">
+    <!-- FINAL CTA on felt -->
+    <div class="rib" aria-hidden="true"></div>
+    <section class="cta felt">
       <div class="container cta-inner">
-        <div>
-          <h2>Your opportunity to grow starts here.</h2>
-          <p>Complete the quick application and take the first step with CAA.</p>
-        </div>
-        <a href="#apply" class="btn btn-light">Apply today <svg class="icon"><use href="#i-arrow"/></svg></a>
+        <span class="mascot" aria-hidden="true"><img src="assets/shield.webp" alt="" width="192" height="192" loading="lazy" decoding="async"></span>
+        <h2 class="twill">
+          <span class="tw-back" aria-hidden="true">Your opportunity to grow starts here.</span>
+          <span class="tw-front">Your opportunity to grow starts here.</span><span class="tw-tex" aria-hidden="true">Your opportunity to grow starts here.</span>
+        </h2>
+        <p>Complete the quick application and take the first step with CAA.</p>
+        <a href="#apply" class="btn btn-red">Apply today <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
     </section>
   </main>
 
+  <div class="rib" aria-hidden="true"></div>
   <footer class="site-footer">
     <div class="container footer-inner">
-      <img class="footer-logo" src="assets/logo-horizontal.webp" alt="Car Accident Attorney" width="480" height="166" loading="lazy" decoding="async">
+      <span class="patch-logo patch-logo-lg">
+        <img src="assets/logo-horizontal.webp" alt="Car Accident Attorney" width="480" height="166" loading="lazy" decoding="async">
+      </span>
       <p class="tagline">Making a difference. <span>Building futures.</span></p>
       <p class="copyright">&copy; <span data-year>2026</span> Car Accident Attorney</p>
     </div>

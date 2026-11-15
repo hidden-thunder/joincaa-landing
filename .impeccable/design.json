@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-15T04:46:09.500985+00:00",
+  "title": "Design System: CAA Careers",
+  "extensions": {
+    "colorMeta": {
+      "navy": {
+        "role": "primary",
+        "displayName": "Varsity Navy",
+        "canonical": "oklch(32.9% 0.077 253)",
+        "tonalRamp": [
+          "oklch(15% 0.037 253)",
+          "oklch(25% 0.048 253)",
+          "oklch(35% 0.060 253)",
+          "oklch(48% 0.075 253)",
+          "oklch(60% 0.065 253)",
+          "oklch(72% 0.052 253)",
+          "oklch(84% 0.038 253)",
+          "oklch(95% 0.025 253)"
+        ]
+      },
+      "navy-deep": {
+        "role": "primary",
+        "displayName": "Felt Shadow",
+        "canonical": "oklch(26.1% 0.059 253)",
+        "tonalRamp": [
+          "oklch(15% 0.028 253)",
+          "oklch(25% 0.037 253)",
+          "oklch(35% 0.046 253)",
+          "oklch(48% 0.057 253)",
+          "oklch(60% 0.050 253)",
+          "oklch(72% 0.040 253)",
+          "oklch(84% 0.029 253)",
+          "oklch(95% 0.019 253)"
+        ]
+      },
+      "navy-ink": {
+        "role": "primary",
+        "displayName": "Locker Navy",
+        "canonical": "oklch(22.4% 0.048 254)",
+        "tonalRamp": [
+          "oklch(15% 0.023 254)",
+          "oklch(25% 0.030 254)",
+          "oklch(35% 0.037 254)",
+          "oklch(48% 0.047 254)",
+          "oklch(60% 0.041 254)",
+          "oklch(72% 0.032 254)",
+          "oklch(84% 0.024 254)",
+          "oklch(95% 0.016 254)"
+        ]
+      },
+      "red": {
+        "role": "secondary",
+        "displayName": "Letterman Red",
+        "canonical": "oklch(50.4% 0.184 26)",
+        "tonalRamp": [
+          "oklch(15% 0.087 26)",
+          "oklch(25% 0.115 26)",
+          "oklch(35% 0.143 26)",
+          "oklch(48% 0.178 26)",
+          "oklch(60% 0.156 26)",
+          "oklch(72% 0.123 26)",
+          "oklch(84% 0.090 26)",
+          "oklch(95% 0.060 26)"
+        ]
+      },
+      "red-deep": {
+        "role": "secondary",
+        "displayName": "Pressed Red",
+        "canonical": "oklch(42.4% 0.152 25)",
+        "tonalRamp": [
+          "oklch(15% 0.072 25)",
+          "oklch(25% 0.095 25)",
+          "oklch(35% 0.118 25)",
+          "oklch(48% 0.147 25)",
+          "oklch(60% 0.129 25)",
+          "oklch(72% 0.102 25)",
+          "oklch(84% 0.074 25)",
+          "oklch(95% 0.049 25)"
+        ]
+      },
+      "red-bright": {
+        "role": "secondary",
+        "displayName": "Signal Red",
+        "canonical": "oklch(61.6% 0.189 23)",
+        "tonalRamp": [
+          "oklch(15% 0.090 23)",
+          "oklch(25% 0.118 23)",
+          "oklch(35% 0.146 23)",
+          "oklch(48% 0.183 23)",
+          "oklch(60% 0.161 23)",
+          "oklch(72% 0.127 23)",
+          "oklch(84% 0.093 23)",
+          "oklch(95% 0.061 23)"
+        ]
+      },
+      "wool": {
+        "role": "neutral",
+        "displayName": "Wool White",
+        "canonical": "oklch(96.6% 0.004 106)",
+        "tonalRamp": [
+          "oklch(15% 0.002 106)",
+          "oklch(25% 0.003 106)",
+          "oklch(35% 0.003 106)",
+          "oklch(48% 0.004 106)",
+          "oklch(60% 0.003 106)",
+          "oklch(72% 0.003 106)",
+          "oklch(84% 0.002 106)",
+          "oklch(95% 0.002 106)"
+        ]
+      },
+      "heather": {
+        "role": "neutral",
+        "displayName": "Sweatshirt Heather",
+        "canonical": "oklch(91.2% 0.006 255)",
+        "tonalRamp": [
+          "oklch(15% 0.003 255)",
+          "oklch(25% 0.004 255)",
+          "oklch(35% 0.005 255)",
+          "oklch(48% 0.006 255)",
+          "oklch(60% 0.005 255)",
+          "oklch(72% 0.004 255)",
+          "oklch(84% 0.003 255)",
+          "oklch(95% 0.002 255)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Roster Paper",
+        "canonical": "oklch(99.3% 0.003 106)",
+        "tonalRamp": [
+          "oklch(15% 0.002 106)",
+          "oklch(25% 0.002 106)",
+          "oklch(35% 0.002 106)",
+          "oklch(48% 0.003 106)",
+          "oklch(60% 0.003 106)",
+          "oklch(72% 0.002 106)",
+          "oklch(84% 0.002 106)",
+          "oklch(95% 0.002 106)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Roster Ruling",
+        "canonical": "oklch(86.2% 0.025 254)",
+        "tonalRamp": [
+          "oklch(15% 0.012 254)",
+          "oklch(25% 0.016 254)",
+          "oklch(35% 0.019 254)",
+          "oklch(48% 0.024 254)",
+          "oklch(60% 0.021 254)",
+          "oklch(72% 0.017 254)",
+          "oklch(84% 0.012 254)",
+          "oklch(95% 0.008 254)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(25.6% 0.051 253)",
+        "tonalRamp": [
+          "oklch(15% 0.024 253)",
+          "oklch(25% 0.032 253)",
+          "oklch(35% 0.040 253)",
+          "oklch(48% 0.049 253)",
+          "oklch(60% 0.043 253)",
+          "oklch(72% 0.034 253)",
+          "oklch(84% 0.025 253)",
+          "oklch(95% 0.017 253)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Faded Ink",
+        "canonical": "oklch(42.8% 0.046 252)",
+        "tonalRamp": [
+          "oklch(15% 0.022 252)",
+          "oklch(25% 0.029 252)",
+          "oklch(35% 0.036 252)",
+          "oklch(48% 0.045 252)",
+          "oklch(60% 0.039 252)",
+          "oklch(72% 0.031 252)",
+          "oklch(84% 0.023 252)",
+          "oklch(95% 0.015 252)"
+        ]
+      },
+      "on-felt": {
+        "role": "neutral",
+        "displayName": "Wool White (on felt)",
+        "canonical": "oklch(96.6% 0.004 106)",
+        "tonalRamp": [
+          "oklch(15% 0.002 106)",
+          "oklch(25% 0.003 106)",
+          "oklch(35% 0.003 106)",
+          "oklch(48% 0.004 106)",
+          "oklch(60% 0.003 106)",
+          "oklch(72% 0.003 106)",
+          "oklch(84% 0.002 106)",
+          "oklch(95% 0.002 106)"
+        ]
+      },
+      "on-felt-soft": {
+        "role": "neutral",
+        "displayName": "Felt Haze",
+        "canonical": "oklch(86.3% 0.023 254)",
+        "tonalRamp": [
+          "oklch(15% 0.011 254)",
+          "oklch(25% 0.014 254)",
+          "oklch(35% 0.018 254)",
+          "oklch(48% 0.022 254)",
+          "oklch(60% 0.020 254)",
+          "oklch(72% 0.015 254)",
+          "oklch(84% 0.011 254)",
+          "oklch(95% 0.007 254)"
+        ]
+      },
+      "success": {
+        "role": "tertiary",
+        "displayName": "Clearance Green",
+        "canonical": "oklch(51.4% 0.114 156)",
+        "tonalRamp": [
+          "oklch(15% 0.054 156)",
+          "oklch(25% 0.071 156)",
+          "oklch(35% 0.088 156)",
+          "oklch(48% 0.111 156)",
+          "oklch(60% 0.097 156)",
+          "oklch(72% 0.076 156)",
+          "oklch(84% 0.056 156)",
+          "oklch(95% 0.037 156)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline in two-layer twill."
+      },
+      "numeral": {
+        "displayName": "Jersey Numeral",
+        "purpose": "Step numbers 1-4 in twill on heather."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles and closing call in twill."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Patch, step, roster and success headings, plain Graduate."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Copy, lead and field input text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Roster field labels; same cut for checklist and motto."
+      },
+      "checklist": {
+        "displayName": "Checklist",
+        "purpose": "Hero benefit list."
+      }
+    },
+    "shadows": [
+      {
+        "name": "button-rest",
+        "value": "0 2px 3px rgb(5 15 30 / .25), 0 8px 18px -6px rgb(5 15 30 / .45)",
+        "purpose": "Buttons at rest."
+      },
+      {
+        "name": "button-lift",
+        "value": "0 4px 6px rgb(5 15 30 / .25), 0 14px 26px -8px rgb(5 15 30 / .5)",
+        "purpose": "Button hover with a 2px rise."
+      },
+      {
+        "name": "patch",
+        "value": "0 3px 4px rgb(3 10 20 / .35), 0 12px 22px -8px rgb(3 10 20 / .55)",
+        "purpose": "Patches sewn on felt."
+      },
+      {
+        "name": "patch-body-inset",
+        "value": "inset 0 1px 2px rgb(0 0 0 / .25)",
+        "purpose": "Felt body inside a patch rim."
+      },
+      {
+        "name": "mascot",
+        "value": "0 4px 6px rgb(3 10 20 / .4), 0 16px 30px -10px rgb(3 10 20 / .6)",
+        "purpose": "Mascot patch above the closing call."
+      },
+      {
+        "name": "roster",
+        "value": "0 2px 4px rgb(0 0 0 / .2), 0 30px 60px -20px rgb(0 0 0 / .6)",
+        "purpose": "Roster sheet laid on felt."
+      },
+      {
+        "name": "logo-patch",
+        "value": "0 2px 6px rgb(0 0 0 / .3)",
+        "purpose": "White logo patch."
+      },
+      {
+        "name": "twill-lift",
+        "value": "0 .1em .16em rgb(5 15 30 / .45)",
+        "purpose": "Under the outer twill layer."
+      },
+      {
+        "name": "focus-ring",
+        "value": "outline: 3px solid #e0474c; outline-offset: 3px",
+        "purpose": "Global keyboard focus."
+      }
+    ],
+    "materials": [
+      {
+        "name": "felt-grain",
+        "value": "assets/tex/felt-grain.webp 400px, soft-light over navy gradient (200px inside patches)",
+        "purpose": "Felt and heather grounds, patch bodies."
+      },
+      {
+        "name": "twill",
+        "value": "assets/tex/twill.webp 32px; clipped text copy at .22 multiply (.18 screen inverted on light) plus #twill-weave SVG filter on the outer layer",
+        "purpose": "Two-layer twill lettering."
+      },
+      {
+        "name": "merrow",
+        "value": "assets/tex/merrow.webp 10px, multiply over thread color",
+        "purpose": "Patch and mascot rims."
+      },
+      {
+        "name": "satin",
+        "value": "assets/tex/satin.webp 8px multiply (6px soft-light on wool patches), masked to assets/emb/*.svg at 46%",
+        "purpose": "Embroidered emblems."
+      },
+      {
+        "name": "rib",
+        "value": "assets/tex/rib.webp 12x30 repeat-x on navy-ink",
+        "purpose": "Knit rib cuff dividers."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "The single easing for all transitions and the sew reveal."
+      },
+      {
+        "name": "sew",
+        "value": "clip-path inset reveal left to right, 1.1s ease-out, .25s delay, once",
+        "purpose": "Hero headline outer twill layer at load."
+      },
+      {
+        "name": "button-hover",
+        "value": ".25s ease-out transform and shadow, .2s background",
+        "purpose": "Button rise; icon slides 3px."
+      },
+      {
+        "name": "patch-settle",
+        "value": ".45s ease-out rotate to 0deg, scale 1.04",
+        "purpose": "Patch hover."
+      },
+      {
+        "name": "field",
+        "value": ".2s border-color and background",
+        "purpose": "Roster field states."
+      },
+      {
+        "name": "nudge",
+        "value": ".9s ease-in-out infinite, translateX 4px",
+        "purpose": "Submit arrow while loading."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "all animation and transition removed; smooth scroll off",
+        "purpose": "prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "980px"
+      },
+      {
+        "name": "phone",
+        "value": "620px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Red Button",
+      "kind": "button",
+      "refersTo": "button-red",
+      "description": "Primary action: header Apply, roster submit, closing call.",
+      "html": "<div class=\"ds-stage\"><button class=\"ds-btn ds-btn-red\">Apply today <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button></div>",
+      "css": ":host{--navy:#14365b;--navy-deep:#0d2540;--navy-ink:#0a1c31;--red:#b62126;--red-deep:#8f1a1e;--red-bright:#e0474c;--wool:#f4f4f1;--heather:#dfe2e6;--paper:#fdfdfb;--rule:#c7d3e2;--ink:#10243b;--ink-soft:#3d5168;--on-felt-soft:#c8d3e1;--ease-out:cubic-bezier(.16,1,.3,1);--font-display:'Graduate','Rockwell',serif;--font-body:'Barlow',system-ui,sans-serif;--font-label:'Barlow Condensed','Barlow',system-ui,sans-serif} .ds-btn{display:inline-flex;align-items:center;gap:.55em;font-family:var(--font-display);font-size:1rem;text-transform:uppercase;letter-spacing:.03em;line-height:1;padding:1.05em 1.6em;border:0;border-radius:10px;cursor:pointer;box-shadow:0 2px 3px rgb(5 15 30 / .25),0 8px 18px -6px rgb(5 15 30 / .45);transition:transform .25s var(--ease-out),box-shadow .25s var(--ease-out),background-color .2s} .ds-btn:hover{transform:translateY(-2px);box-shadow:0 4px 6px rgb(5 15 30 / .25),0 14px 26px -8px rgb(5 15 30 / .5)} .ds-btn:active{transform:translateY(0)} .ds-btn:focus-visible{outline:3px solid var(--red-bright);outline-offset:3px} .ds-btn svg{width:1.1em;height:1.1em;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s var(--ease-out)} .ds-btn:hover svg{transform:translateX(3px)} .ds-stage{background-color:var(--navy);background-image:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%);padding:24px} .ds-btn-red{background:var(--red);color:#fff} .ds-btn-red:hover{background:var(--red-deep)}"
+    },
+    {
+      "name": "White Button",
+      "kind": "button",
+      "refersTo": "button-white",
+      "description": "Wool button for secondary actions on felt.",
+      "html": "<div class=\"ds-stage\"><button class=\"ds-btn ds-btn-white\">Apply now</button></div>",
+      "css": ":host{--navy:#14365b;--navy-deep:#0d2540;--navy-ink:#0a1c31;--red:#b62126;--red-deep:#8f1a1e;--red-bright:#e0474c;--wool:#f4f4f1;--heather:#dfe2e6;--paper:#fdfdfb;--rule:#c7d3e2;--ink:#10243b;--ink-soft:#3d5168;--on-felt-soft:#c8d3e1;--ease-out:cubic-bezier(.16,1,.3,1);--font-display:'Graduate','Rockwell',serif;--font-body:'Barlow',system-ui,sans-serif;--font-label:'Barlow Condensed','Barlow',system-ui,sans-serif} .ds-btn{display:inline-flex;align-items:center;gap:.55em;font-family:var(--font-display);font-size:1rem;text-transform:uppercase;letter-spacing:.03em;line-height:1;padding:1.05em 1.6em;border:0;border-radius:10px;cursor:pointer;box-shadow:0 2px 3px rgb(5 15 30 / .25),0 8px 18px -6px rgb(5 15 30 / .45);transition:transform .25s var(--ease-out),box-shadow .25s var(--ease-out),background-color .2s} .ds-btn:hover{transform:translateY(-2px);box-shadow:0 4px 6px rgb(5 15 30 / .25),0 14px 26px -8px rgb(5 15 30 / .5)} .ds-btn:active{transform:translateY(0)} .ds-btn:focus-visible{outline:3px solid var(--red-bright);outline-offset:3px} .ds-btn svg{width:1.1em;height:1.1em;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s var(--ease-out)} .ds-btn:hover svg{transform:translateX(3px)} .ds-stage{background-color:var(--navy);background-image:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%);padding:24px} .ds-btn-white{background:var(--wool);color:var(--navy)} .ds-btn-white:hover{background:#fff}"
+    },
+    {
+      "name": "Roster Field",
+      "kind": "input",
+      "refersTo": "roster-field",
+      "description": "Underline field on the roster sheet with condensed navy label.",
+      "html": "<div class=\"ds-roster\"><label class=\"ds-label\" for=\"ds-n\">Full name</label><input id=\"ds-n\" class=\"ds-input\" placeholder=\"Jane Doe\"><label class=\"ds-label\" for=\"ds-e\" style=\"margin-top:14px\">Email address</label><input id=\"ds-e\" class=\"ds-input ds-invalid\" value=\"jane@\" aria-invalid=\"true\"><p class=\"ds-err\">Enter a valid email address.</p></div>",
+      "css": ":host{--navy:#14365b;--navy-deep:#0d2540;--navy-ink:#0a1c31;--red:#b62126;--red-deep:#8f1a1e;--red-bright:#e0474c;--wool:#f4f4f1;--heather:#dfe2e6;--paper:#fdfdfb;--rule:#c7d3e2;--ink:#10243b;--ink-soft:#3d5168;--on-felt-soft:#c8d3e1;--ease-out:cubic-bezier(.16,1,.3,1);--font-display:'Graduate','Rockwell',serif;--font-body:'Barlow',system-ui,sans-serif;--font-label:'Barlow Condensed','Barlow',system-ui,sans-serif} .ds-roster{background:var(--paper);color:var(--ink);border-radius:6px;padding:28px;box-shadow:0 2px 4px rgb(0 0 0 / .2),0 30px 60px -20px rgb(0 0 0 / .6);max-width:360px} .ds-label{display:block;font-family:var(--font-label);font-weight:700;font-size:.875rem;letter-spacing:.08em;text-transform:uppercase;color:var(--navy)} .ds-input{width:100%;font:500 1.0625rem/1.3 var(--font-body);color:var(--ink);background:transparent;border:0;border-bottom:2px solid var(--rule);border-radius:0;padding:10px 2px 8px;caret-color:var(--red);transition:border-color .2s,background-color .2s} .ds-input::placeholder{color:#5a6a7e} .ds-input:hover{border-bottom-color:#9fb1c7} .ds-input:focus{outline:none;border-bottom-color:var(--navy);background:#f1f5fa} .ds-input:focus-visible{box-shadow:0 2px 0 var(--navy)} .ds-invalid{border-bottom-color:var(--red);background:#fdf1f1} .ds-err{font-family:var(--font-body);font-size:.875rem;font-weight:600;color:var(--red);margin:6px 0 0}"
+    },
+    {
+      "name": "Navigation Header",
+      "kind": "nav",
+      "refersTo": "patch-logo",
+      "description": "Sticky locker-navy header: logo on a white patch, small red Apply button.",
+      "html": "<header class=\"ds-head\"><span class=\"ds-logo\">CAR ACCIDENT ATTORNEY</span><a class=\"ds-btn ds-btn-red ds-sm\" href=\"#\">Apply now</a></header>",
+      "css": ":host{--navy:#14365b;--navy-deep:#0d2540;--navy-ink:#0a1c31;--red:#b62126;--red-deep:#8f1a1e;--red-bright:#e0474c;--wool:#f4f4f1;--heather:#dfe2e6;--paper:#fdfdfb;--rule:#c7d3e2;--ink:#10243b;--ink-soft:#3d5168;--on-felt-soft:#c8d3e1;--ease-out:cubic-bezier(.16,1,.3,1);--font-display:'Graduate','Rockwell',serif;--font-body:'Barlow',system-ui,sans-serif;--font-label:'Barlow Condensed','Barlow',system-ui,sans-serif} .ds-btn{display:inline-flex;align-items:center;gap:.55em;font-family:var(--font-display);font-size:1rem;text-transform:uppercase;letter-spacing:.03em;line-height:1;padding:1.05em 1.6em;border:0;border-radius:10px;cursor:pointer;box-shadow:0 2px 3px rgb(5 15 30 / .25),0 8px 18px -6px rgb(5 15 30 / .45);transition:transform .25s var(--ease-out),box-shadow .25s var(--ease-out),background-color .2s} .ds-btn:hover{transform:translateY(-2px);box-shadow:0 4px 6px rgb(5 15 30 / .25),0 14px 26px -8px rgb(5 15 30 / .5)} .ds-btn:active{transform:translateY(0)} .ds-btn:focus-visible{outline:3px solid var(--red-bright);outline-offset:3px} .ds-btn svg{width:1.1em;height:1.1em;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s var(--ease-out)} .ds-btn:hover svg{transform:translateX(3px)} .ds-head{display:flex;align-items:center;justify-content:space-between;height:76px;padding:0 24px;background:var(--navy-ink);border-bottom:1px solid rgb(255 255 255 / .08)} .ds-logo{background:#fff;color:var(--navy);padding:12px 14px;border-radius:10px;box-shadow:0 2px 6px rgb(0 0 0 / .3);font:700 .75rem var(--font-label);letter-spacing:.06em} .ds-btn-red{background:var(--red);color:#fff;text-decoration:none} .ds-btn-red:hover{background:var(--red-deep)} .ds-sm{font-size:.8125rem;padding:.95em 1.25em}"
+    },
+    {
+      "name": "Twill Headline",
+      "kind": "custom",
+      "refersTo": "display",
+      "description": "Two-layer twill lettering: red outer layer, wool face with navy keyline. Placeholder: the shipped build adds the twill raster via SVG filter and a clipped texture copy.",
+      "html": "<div class=\"ds-stage\"><h2 class=\"ds-twill\"><span class=\"ds-back\" aria-hidden=\"true\">Build your career</span><span class=\"ds-front\">Build your career</span></h2></div>",
+      "css": ":host{--navy:#14365b;--navy-deep:#0d2540;--navy-ink:#0a1c31;--red:#b62126;--red-deep:#8f1a1e;--red-bright:#e0474c;--wool:#f4f4f1;--heather:#dfe2e6;--paper:#fdfdfb;--rule:#c7d3e2;--ink:#10243b;--ink-soft:#3d5168;--on-felt-soft:#c8d3e1;--ease-out:cubic-bezier(.16,1,.3,1);--font-display:'Graduate','Rockwell',serif;--font-body:'Barlow',system-ui,sans-serif;--font-label:'Barlow Condensed','Barlow',system-ui,sans-serif} .ds-stage{background-color:var(--navy);background-image:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%);padding:32px} .ds-twill{display:inline-grid;margin:0;font-family:var(--font-display);font-weight:400;font-size:3rem;line-height:1.02;letter-spacing:.03em;text-transform:uppercase} .ds-back,.ds-front{grid-area:1/1} .ds-back{color:var(--red);text-shadow:calc(.1em*1.000) calc(.1em*0.000) 0 var(--red),calc(.1em*0.707) calc(.1em*0.707) 0 var(--red),calc(.1em*0.000) calc(.1em*1.000) 0 var(--red),calc(.1em*-0.707) calc(.1em*0.707) 0 var(--red),calc(.1em*-1.000) calc(.1em*0.000) 0 var(--red),calc(.1em*-0.707) calc(.1em*-0.707) 0 var(--red),calc(.1em*0.000) calc(.1em*-1.000) 0 var(--red),calc(.1em*0.707) calc(.1em*-0.707) 0 var(--red),0 .1em .16em rgb(5 15 30 / .45)} .ds-front{color:var(--wool);text-shadow:calc(.035em*1.000) calc(.035em*0.000) 0 var(--navy),calc(.035em*0.707) calc(.035em*0.707) 0 var(--navy),calc(.035em*0.000) calc(.035em*1.000) 0 var(--navy),calc(.035em*-0.707) calc(.035em*0.707) 0 var(--navy),calc(.035em*-1.000) calc(.035em*0.000) 0 var(--navy),calc(.035em*-0.707) calc(.035em*-0.707) 0 var(--navy),calc(.035em*0.000) calc(.035em*-1.000) 0 var(--navy),calc(.035em*0.707) calc(.035em*-0.707) 0 var(--navy)}"
+    },
+    {
+      "name": "Patch",
+      "kind": "card",
+      "refersTo": "patch",
+      "description": "Sewn patch: thread-colored rim around a felt body, tilted, straightens on hover. Placeholder: the shipped build uses merrow, felt-grain and satin raster tiles with an SVG emblem mask.",
+      "html": "<div class=\"ds-stage\"><span class=\"ds-patch\"></span><span class=\"ds-patch ds-red\"></span><span class=\"ds-patch ds-navy ds-shield\"></span></div>",
+      "css": ":host{--navy:#14365b;--navy-deep:#0d2540;--navy-ink:#0a1c31;--red:#b62126;--red-deep:#8f1a1e;--red-bright:#e0474c;--wool:#f4f4f1;--heather:#dfe2e6;--paper:#fdfdfb;--rule:#c7d3e2;--ink:#10243b;--ink-soft:#3d5168;--on-felt-soft:#c8d3e1;--ease-out:cubic-bezier(.16,1,.3,1);--font-display:'Graduate','Rockwell',serif;--font-body:'Barlow',system-ui,sans-serif;--font-label:'Barlow Condensed','Barlow',system-ui,sans-serif} .ds-stage{background-color:var(--navy);background-image:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%);padding:32px;display:flex;gap:28px} .ds-patch{--base:var(--wool);--thread:var(--red);position:relative;width:104px;height:104px;border-radius:50%;background:var(--thread);rotate:-5deg;box-shadow:0 3px 4px rgb(3 10 20 / .35),0 12px 22px -8px rgb(3 10 20 / .55);transition:rotate .45s var(--ease-out),scale .45s var(--ease-out)} .ds-patch::after{content:'';position:absolute;inset:7px;border-radius:inherit;background:var(--base);box-shadow:inset 0 1px 2px rgb(0 0 0 / .25)} .ds-patch:hover{rotate:0deg;scale:1.04} .ds-red{--base:var(--red);--thread:var(--wool);rotate:5deg} .ds-navy{--base:var(--navy-deep);--thread:var(--red)} .ds-shield{border-radius:16px 16px 50% 50% / 16px 16px 62% 62%;rotate:3deg}"
+    },
+    {
+      "name": "Checklist",
+      "kind": "chip",
+      "refersTo": "checklist",
+      "description": "Condensed uppercase benefit list led by red check discs.",
+      "html": "<div class=\"ds-stage\"><ul class=\"ds-list\"><li><svg viewBox=\"0 0 24 24\"><path d=\"M20 6 9 17l-5-5\"/></svg>Flexible schedule</li><li><svg viewBox=\"0 0 24 24\"><path d=\"M20 6 9 17l-5-5\"/></svg>Training provided</li></ul></div>",
+      "css": ":host{--navy:#14365b;--navy-deep:#0d2540;--navy-ink:#0a1c31;--red:#b62126;--red-deep:#8f1a1e;--red-bright:#e0474c;--wool:#f4f4f1;--heather:#dfe2e6;--paper:#fdfdfb;--rule:#c7d3e2;--ink:#10243b;--ink-soft:#3d5168;--on-felt-soft:#c8d3e1;--ease-out:cubic-bezier(.16,1,.3,1);--font-display:'Graduate','Rockwell',serif;--font-body:'Barlow',system-ui,sans-serif;--font-label:'Barlow Condensed','Barlow',system-ui,sans-serif} .ds-stage{background-color:var(--navy);background-image:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%);padding:24px;color:var(--wool)} .ds-list{list-style:none;padding:0;margin:0;display:grid;gap:12px;font-family:var(--font-label);font-weight:700;font-size:1.125rem;letter-spacing:.02em;text-transform:uppercase} .ds-list li{display:flex;align-items:center;gap:10px} .ds-list svg{width:26px;height:26px;padding:5px;box-sizing:border-box;background:var(--red);color:#fff;border-radius:50%;fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}"
+    },
+    {
+      "name": "Rib Cuff",
+      "kind": "custom",
+      "refersTo": "rib-cuff",
+      "description": "30px knit rib divider between bands. Placeholder stripes approximate the shipped rib.webp tile.",
+      "html": "<div class=\"ds-rib\" aria-hidden=\"true\"></div>",
+      "css": ":host{--navy:#14365b;--navy-deep:#0d2540;--navy-ink:#0a1c31;--red:#b62126;--red-deep:#8f1a1e;--red-bright:#e0474c;--wool:#f4f4f1;--heather:#dfe2e6;--paper:#fdfdfb;--rule:#c7d3e2;--ink:#10243b;--ink-soft:#3d5168;--on-felt-soft:#c8d3e1;--ease-out:cubic-bezier(.16,1,.3,1);--font-display:'Graduate','Rockwell',serif;--font-body:'Barlow',system-ui,sans-serif;--font-label:'Barlow Condensed','Barlow',system-ui,sans-serif} .ds-rib{height:30px;background:linear-gradient(180deg,var(--navy-ink) 0 20%,var(--wool) 20% 37%,var(--red) 37% 63%,var(--wool) 63% 80%,var(--navy-ink) 80%)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Varsity Roster",
+    "overview": "Joining CAA is presented as making the team. Every surface is a physical piece of American varsity kit: navy wool felt as the ground, heat-sealed two-layer twill for lettering, knit rib cuffs between sections, merrowed patches with satin-stitch emblems, jersey numerals for steps, and a white roster sheet as the application. The lion shield from the logo is the mascot. The system is material first: textures are real raster tiles (procedural, with provenance sidecars in `html/assets/tex/`), and the CSS layers them; it never fakes thread with dashed borders.\n\nDensity is low and confident. Big collegiate block lettering carries the hierarchy, the body copy stays plain and short in Barlow, and red is spent only where a thread or an action would be red on a letterman jacket. Objects sit on the felt slightly askew, as if sewn or laid down by hand, and settle straight when touched.\n\nThe logo is an identity asset used exactly as supplied, always on a white patch; it is never recolored, traced or rebuilt in twill.",
+    "keyCharacteristics": [
+      "Navy felt ground with a raster fiber grain; heather and wool as the only secondary grounds.",
+      "Display type is always two-layer twill: wool face, navy keyline, red outer layer (inverted on light grounds).",
+      "Sections are divided by knit rib cuffs, not rules or gradients.",
+      "Benefits are patches in four silhouettes at varied size and tilt; steps are twill jersey numerals.",
+      "The form is a ruled roster sheet on paper, slightly rotated on desktop.",
+      "Motion is sewing and settling: one outline reveal on load, patches straighten on hover."
+    ],
+    "rules": [
+      {
+        "name": "The Thread Not Ground Rule",
+        "body": "Red is thread and action: buttons, outlines, accent letters, patch rims and patch fills. It never covers a section ground.",
+        "section": "colors"
+      },
+      {
+        "name": "The Three Grounds Rule",
+        "body": "A section sits on navy felt, heather, or wool. Paper is reserved for the roster sheet; locker navy for header, footer and cuffs.",
+        "section": "colors"
+      },
+      {
+        "name": "The Twill Rule",
+        "body": "Display, headline and numeral type is set as two-layer twill: a back copy (outer layer, red, 0.1em ring, woven through the `#twill-weave` SVG filter), a front copy (face with a 0.035em keyline) and a texture copy clipped to the twill tile. On light grounds use the on-light variant: navy face, wool keyline, 0.075em outline, inverted screen texture.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Red Word Rule",
+        "body": "Inside a twill line, a red word (red face, 0.05em wool keyline) marks the brand name only.",
+        "section": "typography"
+      },
+      {
+        "name": "The Laid-On Rule",
+        "body": "Every shadow pairs a contact shadow with a blurred, negatively spread drop. No hard offset shadows, no colored glows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do render every material from its raster tile: felt-grain (400px, soft-light), twill (32px), merrow (10px), satin (6 to 8px), rib (12x30). New tiles ship with a provenance sidecar.",
+      "Do set display, section and numeral type as two-layer twill, switching to the on-light variant on heather or wool.",
+      "Do divide full-bleed bands with a 30px rib cuff.",
+      "Do keep red to thread and action: buttons, twill outlines, the brand word, checklist discs, patch rims and fills.",
+      "Do tilt sewn objects slightly (between -6deg and 7deg) and let them settle straight on hover.",
+      "Do show the logo and the lion shield exactly as supplied, on white patches.",
+      "Do keep the application on the roster sheet: paper, underline fields, condensed navy labels."
+    ],
+    "donts": [
+      "Don't draw stitching with dashed or dotted CSS borders; thread comes only from the merrow, satin and rib rasters.",
+      "Don't use red as a section ground.",
+      "Don't recolor, trace or re-letter the logo or the lion shield.",
+      "Don't use hard offset shadows or colored glows; shadows are contact plus soft drop, navy-tinted.",
+      "Don't set Graduate in lowercase or for running copy; body, labels and form text stay in Barlow.",
+      "Don't set any twill type larger than 6rem."
+    ]
+  }
+}
