@@ -4,7 +4,13 @@
 
   // Endpoint that receives applications: Case Desk, section «Contratación» (2026-11-15).
   // Before it was an n8n webhook (https://n8n.srv1075657.hstgr.cloud/webhook/Submit).
-  const WEBHOOK_URL = 'https://partners.joincaa.team/api/webhooks/solicitud';
+  // Only the production domains send to the real Case Desk. Any other host (pruebas.joincaa.team,
+  // local copies) posts to its own /api/webhooks/solicitud: on pruebas.joincaa.team Traefik routes
+  // that path to the Case Desk test environment, so tests never create real applications.
+  const PRODUCTION_HOSTS = ['joincaa.team', 'www.joincaa.team'];
+  const WEBHOOK_URL = PRODUCTION_HOSTS.includes(window.location.hostname)
+    ? 'https://partners.joincaa.team/api/webhooks/solicitud'
+    : '/api/webhooks/solicitud';
   const REQUEST_TIMEOUT_MS = 15000;
 
   const form = document.getElementById('apply-form');
@@ -115,7 +121,7 @@
       phone: formatPhone(data.get('phone')),
       recommendedBy: data.get('recommendedBy').trim() || 'None',
       submittedAt: new Date().toISOString(),
-      source: 'joincaa.team',
+      source: window.location.hostname || 'joincaa.team',
       pageUrl: window.location.href,
       ...getTracking(),
     };
