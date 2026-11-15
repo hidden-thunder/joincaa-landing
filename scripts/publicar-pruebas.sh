@@ -92,8 +92,15 @@ tar -C "$WORK" -czf - site docker-compose.yml nginx.conf | ssh "$SERVER" "
   mkdir -p '$REMOTE_DIR' && cd '$REMOTE_DIR'
   rm -rf .nuevo && mkdir .nuevo && tar -xzf - -C .nuevo
   mv .nuevo/docker-compose.yml .nuevo/nginx.conf .
-  rm -rf site.anterior; [ -d site ] && mv site site.anterior; mv .nuevo/site site
-  rm -rf .nuevo site.anterior
+  # Se actualiza el contenido DENTRO de site/ (no se reemplaza la carpeta): nginx la tiene
+  # montada, y si se cambiara por otra, el contenedor seguiría viendo la anterior (vacía).
+  mkdir -p site
+  if command -v rsync >/dev/null; then
+    rsync -a --delete .nuevo/site/ site/
+  else
+    find site -mindepth 1 -delete && cp -a .nuevo/site/. site/
+  fi
+  rm -rf .nuevo
   docker compose up -d --remove-orphans 2>&1 | grep -v '^ *Container .* Running$' || true
   if ! docker ps --format '{{.Names}}' | grep -qx case-desk-pruebas-case-desk-1; then
     echo '⚠ El Case Desk de pruebas está apagado: el formulario dará error al enviar.'
