@@ -2,8 +2,9 @@
 (() => {
   'use strict';
 
-  // Endpoint that receives applications (n8n webhook).
-  const WEBHOOK_URL = 'https://n8n.srv1075657.hstgr.cloud/webhook/Submit';
+  // Endpoint that receives applications: Case Desk, section «Contratación» (2026-11-15).
+  // Before it was an n8n webhook (https://n8n.srv1075657.hstgr.cloud/webhook/Submit).
+  const WEBHOOK_URL = 'https://partners.joincaa.team/api/webhooks/solicitud';
   const REQUEST_TIMEOUT_MS = 15000;
 
   const form = document.getElementById('apply-form');
