@@ -1,4 +1,0 @@
-{
-  "prompt": "Procedural (ImageMagick fx): 256x256 = 0.5 + 0.32*diagonal sinusoid burnish bands (2 periods, seamless) + 0.14*8x8 per-leaf random value blocks + 0.06*45deg motion-blurred noise, mapped through a bronze-to-near-white gold CLUT (#4e300d→#93661f→#d4a447→#f5d985→#fffbea), 32px leaf seams drawn dark with a 1px light overlap edge — burnished gold leaf squares for sign lettering",
-  "createdAt": "2026-11-15T05:10:14.874Z"
-}

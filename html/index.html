@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Careers at CAA — Join the Car Accident Attorney Team</title>
   <meta name="description" content="Join CAA. Monthly base pay plus bonuses, flexible schedule and training provided — no previous experience required. Apply in under a minute.">
-  <meta name="theme-color" content="#0b1626">
+  <meta name="theme-color" content="#0b1f3f">
   <link rel="canonical" href="https://www.joincaa.team/">
 
   <!-- Open Graph / social preview -->
@@ -21,8 +21,8 @@
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
-  <link rel="preload" href="fonts/ultra-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/barlow-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/open-sans-var.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/scripts.js" defer></script>
 </head>
@@ -40,7 +40,7 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#top" class="plate-logo" aria-label="Car Accident Attorney — home">
+      <a href="#top" class="brand" aria-label="Car Accident Attorney — home">
         <img src="assets/logo-horizontal.webp" alt="Car Accident Attorney" width="480" height="166">
       </a>
       <a href="#apply" class="btn btn-red btn-sm">Apply now</a>
@@ -48,52 +48,27 @@
   </header>
 
   <main id="top">
-    <!-- THE WINDOW -->
-    <section class="window">
-      <div class="container window-grid">
-
-        <div class="window-copy">
-          <svg class="arch" viewBox="0 0 640 170" role="img" aria-label="Now hiring">
-            <defs>
-              <pattern id="gold" patternUnits="userSpaceOnUse" width="124" height="124">
-                <image href="assets/tex/gold-leaf.webp" width="124" height="124"/>
-              </pattern>
-              <path id="arc" d="M 40 160 Q 320 10 600 160"/>
-            </defs>
-            <g class="arch-shade" aria-hidden="true">
-              <text><textPath href="#arc" startOffset="50%" text-anchor="middle">NOW HIRING</textPath></text>
-            </g>
-            <g class="arch-outline" aria-hidden="true">
-              <text><textPath href="#arc" startOffset="50%" text-anchor="middle">NOW HIRING</textPath></text>
-            </g>
-            <g class="arch-leaf" aria-hidden="true">
-              <text><textPath href="#arc" startOffset="50%" text-anchor="middle">NOW HIRING</textPath></text>
-            </g>
-          </svg>
-
-          <h1 class="gilt" data-glint>
-            <span class="gl-back" aria-hidden="true">Build your career with CAA</span>
-            <span class="gl-front">Build your career with CAA</span>
-          </h1>
-
+    <!-- HERO: copy + application -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1><span class="h1-line">Career</span> <span class="h1-line h1-red">opportunities</span></h1>
           <p class="lead">
             We're looking for motivated people ready to learn, grow, and join a dynamic team.
             <strong>No previous experience required</strong> — we provide the training and tools you need to get started.
           </p>
         </div>
 
-        <ul class="checklist" aria-label="What you get">
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Monthly base pay + bonuses</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Flexible schedule</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Training provided</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Career growth opportunities</li>
-          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg> Supportive team environment</li>
+        <ul class="checks" aria-label="What you get">
+          <li><span class="check" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span> Monthly base pay + bonuses</li>
+          <li><span class="check" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span> Flexible schedule</li>
+          <li><span class="check" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span> Training provided</li>
+          <li><span class="check" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span> Career growth opportunities</li>
+          <li><span class="check" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span> Supportive team environment</li>
         </ul>
 
-        <!-- The card in the window = application form -->
-        <div class="card" id="apply" tabindex="-1">
+        <div class="apply-card" id="apply" tabindex="-1">
           <div class="card-head">
-            <p class="script" aria-hidden="true">Apply within</p>
             <h2>Employment application</h2>
             <p class="card-sub">Takes less than a minute.</p>
           </div>
@@ -105,16 +80,18 @@
               <p class="field-error" aria-live="polite"></p>
             </div>
 
-            <div class="field">
-              <label for="email">Email address</label>
-              <input id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="jane@email.com" required>
-              <p class="field-error" aria-live="polite"></p>
-            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="jane@email.com" required>
+                <p class="field-error" aria-live="polite"></p>
+              </div>
 
-            <div class="field">
-              <label for="phone">Phone number</label>
-              <input id="phone" name="phone" type="tel" autocomplete="tel-national" inputmode="tel" placeholder="(123) 456-7890" required maxlength="14">
-              <p class="field-error" aria-live="polite"></p>
+              <div class="field">
+                <label for="phone">Phone number</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel-national" inputmode="tel" placeholder="(123) 456-7890" required maxlength="14">
+                <p class="field-error" aria-live="polite"></p>
+              </div>
             </div>
 
             <div class="field">
@@ -148,83 +125,63 @@
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Red enamel sign band -->
-    <section class="sign-band">
-      <div class="container">
-        <p class="sign"><strong>You don't need experience to start.</strong> We provide the training — <span>you build the future.</span></p>
-      </div>
-    </section>
-
-    <!-- BENEFITS: glass-door directory -->
-    <section class="section door" aria-labelledby="why-title">
-      <div class="container">
-        <h2 id="why-title" class="gilt gilt-md">
-          <span class="gl-back" aria-hidden="true">More than a job, a place to grow</span>
-          <span class="gl-front">More than a job, a place to grow</span>
-        </h2>
-
-        <dl class="directory">
-          <div class="entry">
-            <dt>Training</dt>
-            <dd>Comprehensive training and the tools you need to succeed from day one.</dd>
-          </div>
-          <div class="entry">
-            <dt>Flexibility</dt>
-            <dd>Flexible schedules that fit your lifestyle.</dd>
-          </div>
-          <div class="entry">
-            <dt>Income + bonuses</dt>
-            <dd>Competitive base pay with performance bonuses you can unlock.</dd>
-          </div>
-          <div class="entry">
-            <dt>Growth</dt>
-            <dd>A clear path to advance, lead a team, and build your future.</dd>
-          </div>
-          <div class="entry">
-            <dt>Community</dt>
-            <dd>A supportive team that celebrates wins together.</dd>
-          </div>
-          <div class="entry">
-            <dt>Impact</dt>
-            <dd>Help connect accident victims with the legal help they deserve.</dd>
-          </div>
-        </dl>
-      </div>
-    </section>
-
-    <!-- PROCESS: enamel "hours" plaque -->
-    <section class="section plaque-wall" aria-labelledby="steps-title">
-      <div class="container">
-        <div class="plaque">
-          <h2 id="steps-title">From application to growth in 4 steps</h2>
-          <ol class="hours">
-            <li><span class="h-num">1</span><span class="h-name">Apply</span><span class="h-dots" aria-hidden="true"></span><span class="h-text">Fill out our short application form.</span></li>
-            <li><span class="h-num">2</span><span class="h-name">Interview</span><span class="h-dots" aria-hidden="true"></span><span class="h-text">Meet our team and learn more about CAA.</span></li>
-            <li><span class="h-num">3</span><span class="h-name">Training</span><span class="h-dots" aria-hidden="true"></span><span class="h-text">Get trained, equipped, and ready to start.</span></li>
-            <li><span class="h-num">4</span><span class="h-name">Grow</span><span class="h-dots" aria-hidden="true"></span><span class="h-text">Achieve results, build your team, and advance your career.</span></li>
-          </ol>
+      <div class="hero-strip">
+        <div class="container">
+          <p><strong>You don't need experience to start.</strong> We provide the training. <span>You build the future.</span></p>
         </div>
       </div>
     </section>
 
-    <!-- FINAL CTA: back to the glass -->
-    <section class="window cta">
+    <!-- WHY JOIN -->
+    <section class="section why" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="why-title">Why join CAA?</h2>
+          <p>More than a job, a place to grow.</p>
+        </div>
+
+        <dl class="benefits">
+          <div><dt>Training</dt><dd>Comprehensive training and the tools you need to succeed from day one.</dd></div>
+          <div><dt>Flexibility</dt><dd>Flexible schedules that fit your lifestyle.</dd></div>
+          <div><dt>Income + bonuses</dt><dd>Competitive base pay with performance bonuses you can unlock.</dd></div>
+          <div><dt>Growth</dt><dd>A clear path to advance, lead a team, and build your future.</dd></div>
+          <div><dt>Community</dt><dd>A supportive team that celebrates wins together.</dd></div>
+          <div><dt>Impact</dt><dd>Help connect accident victims with the legal help they deserve.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section process" aria-labelledby="steps-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="steps-title">From application to growth in 4 steps</h2>
+        </div>
+        <ol class="timeline">
+          <li><span class="dot" aria-hidden="true">1</span><h3>Apply</h3><p>Fill out our short application form.</p></li>
+          <li><span class="dot" aria-hidden="true">2</span><h3>Interview</h3><p>Meet our team and learn more about CAA.</p></li>
+          <li><span class="dot" aria-hidden="true">3</span><h3>Training</h3><p>Get trained, equipped, and ready to start.</p></li>
+          <li><span class="dot" aria-hidden="true">4</span><h3>Grow</h3><p>Achieve results, build your team, and advance your career.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
       <div class="container cta-inner">
-        <h2 class="gilt gilt-md">
-          <span class="gl-back" aria-hidden="true">Your opportunity to grow starts here.</span>
-          <span class="gl-front">Your opportunity to grow starts here.</span>
-        </h2>
-        <p>Complete the quick application and take the first step with CAA.</p>
-        <a href="#apply" class="btn btn-red">Apply today <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <div>
+          <h2>Your opportunity to grow starts here.</h2>
+          <p>Complete the quick application and take the first step with CAA.</p>
+        </div>
+        <a href="#apply" class="btn btn-navy">Apply today <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span class="plate-logo plate-logo-lg">
+      <span class="brand brand-footer">
         <img src="assets/logo-horizontal.webp" alt="Car Accident Attorney" width="480" height="166" loading="lazy" decoding="async">
       </span>
       <p class="tagline">Making a difference. <span>Building futures.</span></p>
