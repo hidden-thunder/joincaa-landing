@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('form');
     
     // Configura aquí la URL de tu webhook (Make, Zapier, n8n, etc.)
-    const WEBHOOK_URL = 'https://n8n.srv1075657.hstgr.cloud/webhook/Submit';
+    const WEBHOOK_URL = 'https://partners.joincaa.team/api/webhooks/solicitud';
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault(); // Evita que la página se recargue
