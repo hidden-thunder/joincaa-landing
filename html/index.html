@@ -1,389 +1,223 @@
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-            <!-- Open Graph / vista previa para WhatsApp, Facebook, LinkedIn, etc. -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.joincaa.team/">
-    <meta property="og:title" content="Career Opportunities - Car Accident Attorney">
-    <meta property="og:description" content="Join our team! Flexible schedule, career growth, and training provided. Apply now.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Careers at CAA — Join the Car Accident Attorney Team</title>
+  <meta name="description" content="Join CAA. Monthly base pay plus bonuses, flexible schedule and training provided — no previous experience required. Apply in under a minute.">
+  <meta name="theme-color" content="#0b1f3f">
+  <link rel="canonical" href="https://www.joincaa.team/">
 
-    <!-- ¡MUY IMPORTANTE! La URL de la imagen debe ser ABSOLUTA (con https://) -->
-    <meta property="og:image" content="https://www.joincaa.team/assets/IMG_4141.webp">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.joincaa.team/">
+  <meta property="og:title" content="Career Opportunities — Car Accident Attorney">
+  <meta property="og:description" content="Join our team! Flexible schedule, career growth, and training provided. Apply now.">
+  <meta property="og:image" content="https://www.joincaa.team/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career Opportunities - Car Accident Attorney</title>
-    <!-- Tailwind CSS para el diseño rápido y responsivo -->
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- FontAwesome para los íconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts: Montserrat para títulos, Open Sans para texto -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'brand-blue': '#0b1f3f',
-                        'brand-red': '#cc0000',
-                        'brand-cyan': '#00bcd4',
-                        'brand-gray': '#f8f9fa'
-                    },
-                    fontFamily: {
-                        'sans': ['Open Sans', 'sans-serif'],
-                        'heading': ['Montserrat', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-    <script src="js/scripts.js" defer></script>
-    <style>
-        /* Estilos personalizados para elementos específicos que Tailwind no cubre fácilmente */
-        .title-lines {
-            position: relative;
-            display: inline-block;
-        }
-        .title-lines::before,
-        .title-lines::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            width: 50px;
-            height: 2px;
-            background-color: #cc0000;
-        }
-        .title-lines::before { right: 100%; margin-right: 15px; }
-        .title-lines::after { left: 100%; margin-left: 15px; }
-        
-        .hero-bg {
-            background: linear-gradient(to right, rgba(11, 31, 63, 0.78) 20%, rgba(11, 31, 63, 0.55) 100%), url('assets/16071.webp') center/cover no-repeat;
-            background-color: #0b1f3f;
-            min-height: 480px;
-        }
-        
-        .form-container {
-            position: relative;
-            border: 3px solid #0b1f3f;
-            border-top: 5px solid #cc0000;
-            border-bottom: 5px solid #cc0000;
-        }
-        
-        .logo-shield {
-            background-color: white;
-            padding: 0 10px;
-        }
-        .logo-image {
-            display: block;
-            height: 92px;
-            width: auto;
-            max-width: 440px;
-            object-fit: contain;
-        }
-        html {scroll-behavior: smooth;}
-    </style>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="preload" href="fonts/montserrat-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/open-sans-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=20261117">
+  <script src="js/scripts.js?v=20261117" defer></script>
+  <script src="js/ui.js?v=20261117" defer></script>
 </head>
-<body class="font-sans text-gray-800 antialiased">
+<body>
 
-    <!-- Navegación y Encabezado -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
-            
-            <!-- Logo -->
-            <div class="flex items-center justify-center -mt-2">
-                <img src="assets/IMG_4142.webp" alt="Logo CAA" class="logo-image" loading="lazy" decoding="async">
-            </div>
+  <!-- Icon sprite (Lucide, ISC license) -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></symbol>
+    <symbol id="i-cash" viewBox="0 0 24 24"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+    <symbol id="i-growth" viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></symbol>
+    <symbol id="i-team" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+    <symbol id="i-newbie" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6"/><path d="M22 11h-6"/></symbol>
+    <symbol id="i-form" viewBox="0 0 24 24"><path d="M12 22h6a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v10"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10.4 12.6a2 2 0 1 1 3 3L8 21l-4 1 1-4Z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></symbol>
+    <symbol id="i-board" viewBox="0 0 24 24"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m7 21 5-5 5 5"/></symbol>
+    <symbol id="i-timer" viewBox="0 0 24 24"><path d="M10 2h4"/><path d="m12 14 3-3"/><circle cx="12" cy="14" r="8"/></symbol>
+  </svg>
 
-            <!-- Acciones Derecha (Solo el botón de aplicar) -->
-            <div class="flex items-center space-x-4">
-                <a href="#apply-section" class="bg-brand-red hover:bg-red-700 text-white font-heading font-bold py-2 px-6 rounded transition">
-                    APPLY NOW
-                </a>
-            </div>
+  <a class="skip-link" href="#apply">Skip to application</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Car Accident Attorney — home">
+        <img src="assets/logo-horizontal.webp" alt="Car Accident Attorney" width="480" height="166">
+      </a>
+      <a href="#apply" class="btn btn-red btn-sm">Apply now</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO: the offer in one glance + the application -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1><span class="h1-line">Career</span> <span class="h1-line h1-red">opportunities</span></h1>
+          <p class="lead">No experience? <strong>No problem.</strong> We train you and give you the tools to grow with CAA.</p>
         </div>
-    </header>
 
-    <!-- Sección Hero -->
-    <section class="hero-bg text-white relative py-20 lg:py-32 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center">
-            
-            <!-- Contenido Izquierdo -->
-            <div class="w-full lg:w-1/2 lg:pr-10">
-                <h1 class="font-heading font-black text-5xl md:text-6xl uppercase leading-none mb-2">
-                    Career <br>
-                    <span class="text-brand-red">Opportunities</span>
-                </h1>
-                <p class="text-gray-200 mb-6 max-w-lg mt-4">
-                    At CAA we are always looking for motivated individuals who are ready to learn, grow, and become part of a dynamic team. No previous experience is required — We provide the training and tools you need to get started.
-                </p>
-                <p class="text-gray-200 mb-6 max-w-lg mt-4">
-                    Explore the opportunities! Complete our quick Employment Application, and take the first step toward building your future with CAA.
-                </p>                
-                <ul class="space-y-3 font-semibold">
-                    <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-cyan mr-3 text-xl"></i> Monthly Base Pay + Bonuses</li>
-                    <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-cyan mr-3 text-xl"></i> Flexible Schedule</li>
-                    <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-cyan mr-3 text-xl"></i> Training Provided</li>
-                    <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-cyan mr-3 text-xl"></i> Career Growth Opportunities</li>
-                    <li class="flex items-center"><i class="fa-solid fa-circle-check text-brand-cyan mr-3 text-xl"></i> Supportive Team Environment</li>
-                </ul>
-                <p class="text-gray-200 mb-6 max-w-lg mt-4">
-                    Your opportunity to grow starts here. Apply today!
-                </p>                  
+        <ul class="perks" aria-label="What you get">
+          <li><span class="perk-icon" aria-hidden="true"><svg class="icon"><use href="#i-newbie"/></svg></span><span>No experience <b>needed</b></span></li>
+          <li><span class="perk-icon" aria-hidden="true"><svg class="icon"><use href="#i-cap"/></svg></span><span>Training <b>provided</b></span></li>
+          <li><span class="perk-icon" aria-hidden="true"><svg class="icon"><use href="#i-cash"/></svg></span><span>Base pay <b>+ bonuses</b></span></li>
+          <li><span class="perk-icon" aria-hidden="true"><svg class="icon"><use href="#i-clock"/></svg></span><span>Flexible <b>schedule</b></span></li>
+        </ul>
+
+        <div class="apply-card" id="apply" tabindex="-1">
+          <div class="card-head">
+            <h2>Employment application</h2>
+            <p class="card-sub"><svg class="icon" aria-hidden="true"><use href="#i-timer"/></svg> Takes less than a minute.</p>
+          </div>
+
+          <form id="apply-form" novalidate>
+            <div class="field">
+              <label for="fullName">Full name</label>
+              <input id="fullName" name="fullName" type="text" autocomplete="name" placeholder="Jane Doe" required minlength="3">
+              <p class="field-error" aria-live="polite"></p>
             </div>
 
-            <!-- Tarjeta Flotante Derecha -->
-            <div class="w-full lg:w-1/2 mt-12 lg:mt-0 flex justify-end items-end relative h-full">
-                <div class="bg-[#051126] border-l-4 border-brand-red p-6 md:p-8 rounded-lg shadow-2xl flex items-center max-w-md lg:absolute lg:-bottom-20 lg:-right-4">
-                    <div class="text-brand-red text-5xl mr-6">
-                        <i class="fa-solid fa-users-viewfinder"></i>
-                    </div>
-                    <div>
-                        <p class="font-bold text-lg leading-tight mb-1">You don't need experience to start.</p>
-                        <p class="text-gray-300 text-sm mb-1">We provide the training.</p>
-                        <p class="text-brand-red font-bold">You build the future.</p>
-                    </div>
-                </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="jane@email.com" required>
+                <p class="field-error" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="phone">Phone number</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel-national" inputmode="tel" placeholder="(123) 456-7890" required maxlength="14">
+                <p class="field-error" aria-live="polite"></p>
+              </div>
             </div>
+
+            <div class="field">
+              <label for="recommendedBy">Recommended by <span class="optional">(optional)</span></label>
+              <input id="recommendedBy" name="recommendedBy" type="text" placeholder="Who referred you?">
+            </div>
+
+            <!-- Honeypot anti-spam: hidden from humans -->
+            <div class="hp" aria-hidden="true">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <p class="form-alert" role="alert" hidden>
+              <svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>
+              <span>We couldn't send your application. Please try again.</span>
+            </p>
+
+            <button type="submit" class="btn btn-red btn-block">
+              <span class="btn-label">Submit application</span>
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </button>
+
+            <p class="privacy"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg> Your information is private and only used for recruiting.</p>
+          </form>
+
+          <div class="apply-success" hidden tabindex="-1">
+            <div class="success-badge" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></div>
+            <h2>Thank you!</h2>
+            <p>Your application has been received. Our recruitment team will review your information and contact you soon.</p>
+          </div>
         </div>
+      </div>
+
+      <!-- The promise, as a three-part equation -->
+      <div class="promise">
+        <div class="container">
+          <p class="sr-only">You don't need experience to start. We provide the training. You build the future.</p>
+          <ol class="promise-row" aria-hidden="true">
+            <li><svg class="icon"><use href="#i-newbie"/></svg><span>No experience <b>to start</b></span></li>
+            <li><svg class="icon"><use href="#i-board"/></svg><span>We provide <b>the training</b></span></li>
+            <li class="is-you"><svg class="icon"><use href="#i-growth"/></svg><span>You build <b>the future</b></span></li>
+          </ol>
+        </div>
+      </div>
     </section>
 
-    <!-- Sección ¿Por qué unirse? -->
-    <section class="py-20 bg-brand-gray">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="font-heading font-black text-3xl text-brand-blue uppercase tracking-wide title-lines inline-block">
-                    WHY JOIN CAA?
-                </h2>
-                <div class="text-brand-red mt-2 text-xl">
-                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
-                <!-- Beneficio 1 -->
-                <div>
-                    <div class="bg-brand-blue text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl shadow-lg">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                    </div>
-                    <h3 class="font-heading font-bold text-brand-red uppercase mb-2">TRAINING</h3>
-                    <p class="text-xs text-gray-600 px-2">We provide comprehensive training and the tools you need to succeed.</p>
-                </div>
-                <!-- Beneficio 2 -->
-                <div>
-                    <div class="bg-brand-blue text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl shadow-lg">
-                        <i class="fa-solid fa-clock"></i>
-                    </div>
-                    <h3 class="font-heading font-bold text-brand-red uppercase mb-2">FLEXIBILITY</h3>
-                    <p class="text-xs text-gray-600 px-2">Work with flexible schedules that fit your lifestyle.</p>
-                </div>
-                <!-- Beneficio 3 -->
-                <div>
-                    <div class="bg-brand-blue text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl shadow-lg">
-                        <i class="fa-solid fa-circle-dollar-to-slot"></i>
-                    </div>
-                    <h3 class="font-heading font-bold text-brand-red uppercase mb-2">INCOME + BONUSES</h3>
-                    <p class="text-xs text-gray-600 px-2">Earn competitive compensation with the opportunity to unlock performance bonuses.</p>
-                </div>
-                <!-- Beneficio 4 -->
-                <div>
-                    <div class="bg-brand-blue text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl shadow-lg">
-                        <i class="fa-solid fa-chart-line"></i>
-                    </div>
-                    <h3 class="font-heading font-bold text-brand-red uppercase mb-2">GROWTH</h3>
-                    <p class="text-xs text-gray-600 px-2">A clear path to advance, lead a team, and build your future.</p>
-                </div>
-                <!-- Beneficio 5 -->
-                <div>
-                    <div class="bg-brand-blue text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl shadow-lg">
-                        <i class="fa-solid fa-people-group"></i>
-                    </div>
-                    <h3 class="font-heading font-bold text-brand-red uppercase mb-2">COMMUNITY</h3>
-                    <p class="text-xs text-gray-600 px-2">Be part of a supportive team that celebrates wins together.</p>
-                </div>
-                <!-- Beneficio 6 -->
-                <div>
-                    <div class="bg-brand-blue text-white w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl shadow-lg">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <h3 class="font-heading font-bold text-brand-red uppercase mb-2">IMPACT</h3>
-                    <p class="text-xs text-gray-600 px-2">Help connect accident victims with the legal help they deserve.</p>
-                </div>
-            </div>
+    <!-- WHY JOIN -->
+    <section class="section why" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="why-title">Why join CAA?</h2>
+          <p>More than a job — <mark>a place to grow.</mark></p>
         </div>
+
+        <ul class="benefits" data-reveal>
+          <li><span class="b-icon" aria-hidden="true"><svg class="icon"><use href="#i-cap"/></svg></span><h3>Training</h3><p>Full training and tools <strong>from day one.</strong></p></li>
+          <li><span class="b-icon" aria-hidden="true"><svg class="icon"><use href="#i-clock"/></svg></span><h3>Flexibility</h3><p>Schedules that <strong>fit your life.</strong></p></li>
+          <li><span class="b-icon" aria-hidden="true"><svg class="icon"><use href="#i-cash"/></svg></span><h3>Income + bonuses</h3><p>Base pay plus <strong>performance bonuses.</strong></p></li>
+          <li><span class="b-icon" aria-hidden="true"><svg class="icon"><use href="#i-growth"/></svg></span><h3>Growth</h3><p>A clear path to <strong>advance and lead a team.</strong></p></li>
+          <li><span class="b-icon" aria-hidden="true"><svg class="icon"><use href="#i-team"/></svg></span><h3>Community</h3><p>A team that <strong>celebrates wins together.</strong></p></li>
+          <li><span class="b-icon" aria-hidden="true"><svg class="icon"><use href="#i-heart"/></svg></span><h3>Impact</h3><p>Help accident victims <strong>get the legal help they deserve.</strong></p></li>
+        </ul>
+      </div>
     </section>
 
-    <!-- Sección Formulario de Aplicación -->
-    <section id="apply-section" class="py-20 relative bg-white overflow-hidden">
-        <!-- Marca de agua de fondo (decorativa) -->
-        <div class="absolute inset-0 opacity-5 pointer-events-none flex justify-center items-center">
-            <i class="fa-solid fa-shield-cat text-[40rem] text-brand-blue"></i>
+    <!-- HOW TO APPLY -->
+    <section class="section process" aria-labelledby="steps-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="steps-title">From application to growth in 4 steps</h2>
         </div>
-
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
-            <div class="form-container bg-white p-8 md:p-12 shadow-xl rounded-sm">
-                
-                <div class="text-center mb-10">
-                    <h2 class="font-heading font-black text-2xl md:text-3xl text-brand-blue uppercase tracking-wide title-lines inline-block">
-                        EMPLOYMENT APPLICATION
-                    </h2>
-                    <div class="text-brand-red mt-2 text-xl">
-                        <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
-                    </div>
-                </div>
-
-                <form>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <!-- Nombre Completo -->
-                        <div>
-                            <label class="block font-heading font-bold text-brand-blue uppercase text-sm mb-2">FULL NAME</label>
-                            <input type="text" placeholder="Full Name" class="w-full border border-gray-300 rounded p-3 focus:outline-none focus:border-brand-blue transition">
-                        </div>
-                        
-                        <!-- Correo Electrónico -->
-                        <div>
-                            <label class="block font-heading font-bold text-brand-blue uppercase text-sm mb-2">EMAIL ADDRESS</label>
-                            <input type="email" placeholder="Email Address" class="w-full border border-gray-300 rounded p-3 focus:outline-none focus:border-brand-blue transition">
-                        </div>
-
-                        <!-- Número de Teléfono (Diseño dividido) -->
-                        <div>
-                            <label class="block font-heading font-bold text-brand-blue uppercase text-sm mb-2">PHONE NUMBER</label>
-                            <div class="flex items-center space-x-2">
-                                <span class="text-gray-400 font-bold">(</span>
-                                <input type="text" placeholder="123" maxlength="3" class="w-full text-center border border-gray-300 rounded p-3 focus:outline-none focus:border-brand-blue transition">
-                                <span class="text-gray-400 font-bold">)</span>
-                                <span class="text-gray-400 font-bold">-</span>
-                                <span class="text-gray-400 font-bold">(</span>
-                                <input type="text" placeholder="456" maxlength="3" class="w-full text-center border border-gray-300 rounded p-3 focus:outline-none focus:border-brand-blue transition">
-                                <span class="text-gray-400 font-bold">)</span>
-                                <span class="text-gray-400 font-bold">-</span>
-                                <input type="text" placeholder="7890" maxlength="4" class="w-full text-center border border-gray-300 rounded p-3 focus:outline-none focus:border-brand-blue transition">
-                            </div>
-                        </div>
-
-                        <!-- Recomendado Por -->
-                        <div>
-                            <label class="block font-heading font-bold text-brand-blue uppercase text-sm mb-2">RECOMMENDED BY</label>
-                            <input type="text" placeholder="Recommended by" class="w-full border border-gray-300 rounded p-3 focus:outline-none focus:border-brand-blue transition">
-                        </div>
-                    </div>
-
-                    <div class="mt-10 flex justify-center">
-                        <button type="submit" class="bg-brand-red hover:bg-red-700 text-white font-heading font-bold uppercase py-4 px-12 rounded w-full md:w-auto min-w-[300px] transition shadow-md">
-                            SUBMIT APPLICATION
-                        </button>
-                    </div>
-                </form>
-
-                <!-- Logo inferior superpuesto al borde -->
-                <div class="absolute left-1/2 transform -translate-x-1/2 -bottom-12 logo-shield flex flex-col items-center bg-white px-3 py-2 rounded">
-                    <img src="assets/IMG_4141.webp" alt="Logo CAA" class="logo-image" loading="lazy" decoding="async">
-                </div>
+        <ol class="timeline" data-reveal>
+          <li>
+            <span class="dot" aria-hidden="true"><svg class="icon"><use href="#i-form"/></svg><span class="dot-num">1</span></span>
+            <div class="step-body">
+              <h3>Apply</h3>
+              <p>Short form, <strong>under a minute.</strong></p>
+              <a href="#apply" class="step-link">Start now <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </div>
-        </div>
+          </li>
+          <li>
+            <span class="dot" aria-hidden="true"><svg class="icon"><use href="#i-chat"/></svg><span class="dot-num">2</span></span>
+            <div class="step-body"><h3>Interview</h3><p><strong>Meet our team</strong> and learn about CAA.</p></div>
+          </li>
+          <li>
+            <span class="dot" aria-hidden="true"><svg class="icon"><use href="#i-board"/></svg><span class="dot-num">3</span></span>
+            <div class="step-body"><h3>Training</h3><p>Get <strong>trained, equipped</strong> and ready.</p></div>
+          </li>
+          <li>
+            <span class="dot" aria-hidden="true"><svg class="icon"><use href="#i-growth"/></svg><span class="dot-num">4</span></span>
+            <div class="step-body"><h3>Grow</h3><p><strong>Get results,</strong> build your team, advance.</p></div>
+          </li>
+        </ol>
+      </div>
     </section>
 
-    <!-- Sección de Proceso (Pasos) -->
-    <section class="py-20 mt-8 bg-brand-gray">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-center space-y-12 md:space-y-0 text-center">
-                
-                <!-- Paso 1 -->
-                <div class="flex-1 relative px-4">
-                    <div class="bg-brand-red text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mx-auto absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">01</div>
-                    <div class="text-brand-blue text-5xl mb-4 mt-6">
-                        <i class="fa-solid fa-file-signature"></i>
-                    </div>
-                    <h3 class="font-heading font-bold text-brand-red uppercase mb-2">APPLY</h3>
-                    <p class="text-xs text-gray-600">Fill out our short application form.</p>
-                </div>
-
-                <!-- Flecha -->
-                <div class="hidden md:block text-brand-blue opacity-50 text-2xl">
-                    <i class="fa-solid fa-angle-right"></i>
-                </div>
-
-                <!-- Paso 2 -->
-                <div class="flex-1 relative px-4">
-                    <div class="bg-brand-red text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mx-auto absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">02</div>
-                    <div class="text-brand-blue text-5xl mb-4 mt-6">
-                        <i class="fa-solid fa-user-group"></i>
-                    </div>
-                    <h3 class="font-heading font-bold text-brand-red uppercase mb-2">INTERVIEW</h3>
-                    <p class="text-xs text-gray-600">Meet with our team and learn more about CAA.</p>
-                </div>
-
-                <!-- Flecha -->
-                <div class="hidden md:block text-brand-blue opacity-50 text-2xl">
-                    <i class="fa-solid fa-angle-right"></i>
-                </div>
-
-                <!-- Paso 3 -->
-                <div class="flex-1 relative px-4">
-                    <div class="bg-brand-red text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mx-auto absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">03</div>
-                    <div class="text-brand-blue text-5xl mb-4 mt-6">
-                        <i class="fa-solid fa-chalkboard-user"></i>
-                    </div>
-                    <h3 class="font-heading font-bold text-brand-red uppercase mb-2">TRAINING</h3>
-                    <p class="text-xs text-gray-600">Get trained, equipped, and ready to get started.</p>
-                </div>
-
-                <!-- Flecha -->
-                <div class="hidden md:block text-brand-blue opacity-50 text-2xl">
-                    <i class="fa-solid fa-angle-right"></i>
-                </div>
-
-                <!-- Paso 4 -->
-                <div class="flex-1 relative px-4">
-                    <div class="bg-brand-red text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mx-auto absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">04</div>
-                    <div class="text-brand-blue text-5xl mb-4 mt-6">
-                        <i class="fa-solid fa-arrow-trend-up"></i>
-                    </div>
-                    <h3 class="font-heading font-bold text-brand-red uppercase mb-2">GROW</h3>
-                    <p class="text-xs text-gray-600">Achieve results, build your team, and advance your career.</p>
-                </div>
-
-            </div>
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta-inner">
+        <div>
+          <h2>Your opportunity to grow starts here.</h2>
+          <p><svg class="icon" aria-hidden="true"><use href="#i-timer"/></svg> The application takes less than a minute.</p>
         </div>
+        <a href="#apply" class="btn btn-navy">Apply today <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
     </section>
+  </main>
 
-    <!-- Pie de Página (Footer) -->
-    <footer class="bg-brand-blue text-white py-8 px-4 sm:px-6 lg:px-8 border-t-[6px] border-brand-red">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
-            
-            <!-- Logo Blanco/Rojo -->
-            <div class="flex items-center space-x-3">
-                <img src="assets/IMG_4142.webp" alt="Logo CAA" class="logo-image" loading="lazy" decoding="async">
-            </div>
-
-            <!-- Lema -->
-            <div class="text-center">
-                <p class="font-bold text-lg">Making a difference.</p>
-                <p class="font-bold text-lg text-gray-300">Building futures.</p>
-            </div>
-
-            <!-- Redes Sociales -->
-            <div class="flex space-x-4">
-                <a href="#" class="w-10 h-10 rounded-full border border-gray-400 flex items-center justify-center hover:bg-brand-red hover:border-brand-red transition">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="#" class="w-10 h-10 rounded-full border border-gray-400 flex items-center justify-center hover:bg-brand-red hover:border-brand-red transition">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="#" class="w-10 h-10 rounded-full border border-gray-400 flex items-center justify-center hover:bg-brand-red hover:border-brand-red transition">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="#" class="w-10 h-10 rounded-full border border-gray-400 flex items-center justify-center hover:bg-brand-red hover:border-brand-red transition">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>
-            </div>
-
-        </div>
-    </footer>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="brand brand-footer">
+        <img src="assets/logo-horizontal.webp" alt="Car Accident Attorney" width="480" height="166" loading="lazy" decoding="async">
+      </span>
+      <p class="tagline">Making a difference. <span>Building futures.</span></p>
+      <p class="copyright">&copy; <span data-year>2026</span> Car Accident Attorney</p>
+    </div>
+  </footer>
 
 </body>
 </html>

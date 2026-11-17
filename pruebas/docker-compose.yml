@@ -1,0 +1,51 @@
+# ==============================================================================
+# Ambiente de pruebas del landing: https://pruebas.joincaa.team
+#
+# Vive en el servidor en /root/joincaa-pruebas, aparte de producción (/root/html).
+# No se edita a mano allá: scripts/publicar-pruebas.sh sube este archivo, nginx.conf y site/.
+#
+#   /                          -> site/ (comparación de versiones y cada versión en /<slug>/)
+#   /api/webhooks/solicitud    -> Case Desk de PRUEBAS (/home/case-desk-pruebas), nunca el real.
+#                                 html/js/scripts.js envía ahí en cualquier dominio que no sea
+#                                 joincaa.team / www.joincaa.team.
+#
+# El Case Desk de pruebas solo acepta solicitudes de https://pruebas.joincaa.team
+# (ajuste «Páginas que pueden enviar solicitudes», en Contratación). Si está apagado,
+# el formulario muestra el error de envío: cd /home/case-desk-pruebas && docker compose up -d
+# ==============================================================================
+services:
+  joincaa-pruebas:
+    image: nginx:alpine
+    container_name: joincaa-pruebas
+    restart: unless-stopped
+    volumes:
+      - ./site:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    labels:
+      - "traefik.enable=true"
+
+      # Páginas del landing
+      - "traefik.http.routers.joincaa-pruebas.rule=Host(`pruebas.joincaa.team`)"
+      - "traefik.http.routers.joincaa-pruebas.entrypoints=web,websecure"
+      - "traefik.http.routers.joincaa-pruebas.tls=true"
+      - "traefik.http.routers.joincaa-pruebas.tls.certresolver=mytlschallenge"
+      - "traefik.http.routers.joincaa-pruebas.service=joincaa-pruebas"
+      - "traefik.http.routers.joincaa-pruebas.middlewares=joincaa-pruebas-noindex"
+      - "traefik.http.middlewares.joincaa-pruebas-noindex.headers.customresponseheaders.X-Robots-Tag=noindex, nofollow"
+      - "traefik.http.services.joincaa-pruebas.loadbalancer.server.port=80"
+
+      # Formulario -> Case Desk de pruebas (servicio definido por los labels de case-desk-pruebas)
+      - "traefik.http.routers.joincaa-pruebas-solicitud.rule=Host(`pruebas.joincaa.team`) && Path(`/api/webhooks/solicitud`)"
+      - "traefik.http.routers.joincaa-pruebas-solicitud.priority=100"
+      - "traefik.http.routers.joincaa-pruebas-solicitud.entrypoints=websecure"
+      - "traefik.http.routers.joincaa-pruebas-solicitud.tls=true"
+      - "traefik.http.routers.joincaa-pruebas-solicitud.tls.certresolver=mytlschallenge"
+      - "traefik.http.routers.joincaa-pruebas-solicitud.service=case-desk-pruebas@docker"
+      - "traefik.http.routers.joincaa-pruebas-solicitud.middlewares=joincaa-pruebas-body"
+      - "traefik.http.middlewares.joincaa-pruebas-body.buffering.maxRequestBodyBytes=1048576"
+    networks:
+      - root_default
+
+networks:
+  root_default:
+    external: true
