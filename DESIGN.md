@@ -74,7 +74,7 @@ Only the application card and buttons are lifted: card `0 2px 6px rgba(0,0,0,.18
 - **Application card** (`#apply.apply-card`): white, 8px radius, 5px red top border, boxed inputs (4px radius) with navy focus ring; email and phone share a row on desktop. "Takes less than a minute." sits in a pale-red pill with a timer icon.
 - **Perks** (`.perks`): four quick facts in the hero, each a translucent tile with a red icon square; 2×2 on desktop, a 4-up icon row on phones so the offer reads before the form.
 - **Promise row** (`.promise`): the "You don't need experience…" sentence as a three-step equation (no experience → we train → you build the future) with outlined icons and chevrons; the last step is red. The full sentence stays in an `.sr-only` paragraph.
-- **Benefit tiles** (`.benefits`): white tiles on gray-50, pale-red icon square, uppercase term, one short line with the key phrase in navy bold. 3 columns desktop, 2 on phones.
+- **Benefit tiles** (`.benefits`): white tiles on gray-50, pale-red icon square beside the term (never stacked above it), one short line with the key phrase in navy bold. 3 columns desktop, 2 tablet, 1 compact column on phones.
 - **Steps** (`.timeline`): red icon dots with a navy number badge on a 4px line that fills as it scrolls in; vertical rail on phones. Step 1 links to the form ("Start now").
 - **`mark`**: a low red highlighter stroke for one key phrase per section.
 - **Success**: red disc with a white check, "Thank you!" in Montserrat 900.

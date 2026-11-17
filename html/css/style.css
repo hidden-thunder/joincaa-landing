@@ -126,14 +126,14 @@ mark { background: linear-gradient(transparent 58%, rgba(200,16,46,.2) 58%, rgba
   color: var(--on-navy-soft); font-weight: 600; line-height: 1.25;
 }
 .perks b { color: var(--white); font-weight: 800; }
-.perk-icon { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 8px; background: var(--red); color: var(--white); flex: none; box-shadow: 0 6px 14px -6px rgba(200,16,46,.8); }
+.perk-icon { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 8px; background: var(--red); color: var(--white); flex: none; box-shadow: 0 2px 4px rgba(0,0,0,.25); }
 .perk-icon .icon { width: 22px; height: 22px; }
 
 /* ---------- Application card ---------- */
 .apply-card {
   position: relative;
   background: var(--white); color: var(--text-soft);
-  border-radius: 8px; border-top: 5px solid var(--red);
+  border-radius: 0 0 8px 8px; border-top: 5px solid var(--red);
   padding: clamp(22px, 2.6vw, 32px);
   box-shadow: 0 2px 6px rgba(0,0,0,.18), 0 24px 48px -16px rgba(0,0,0,.55);
 }
@@ -218,7 +218,7 @@ mark { background: linear-gradient(transparent 58%, rgba(200,16,46,.2) 58%, rgba
 .timeline::before, .timeline::after { content: ""; position: absolute; left: calc(var(--dot) / 2); right: calc((100% - 72px) / 4 - var(--dot) / 2); top: calc(var(--dot) / 2 - 2px); height: 4px; border-radius: 2px; background: var(--gray-200); }
 .timeline::after { background: var(--red); transform-origin: left center; }
 .timeline li { position: relative; }
-.dot { position: relative; display: grid; place-items: center; width: var(--dot); height: var(--dot); border-radius: 50%; background: var(--red); color: var(--white); box-shadow: 0 0 0 6px var(--white), 0 10px 20px -10px rgba(200,16,46,.8); z-index: 1; }
+.dot { position: relative; display: grid; place-items: center; width: var(--dot); height: var(--dot); border-radius: 50%; background: var(--red); color: var(--white); box-shadow: 0 0 0 6px var(--white), 0 8px 16px -8px rgba(11,31,63,.45); z-index: 1; }
 .dot .icon { width: 28px; height: 28px; }
 .dot-num { position: absolute; top: -4px; right: -6px; display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--navy); color: var(--white); font: 900 .8125rem/1 var(--head); box-shadow: 0 0 0 3px var(--white); }
 .step-body h3 { margin-top: 18px; font-size: 1.125rem; font-weight: 900; text-transform: uppercase; letter-spacing: .03em; }
@@ -311,12 +311,12 @@ mark { background: linear-gradient(transparent 58%, rgba(200,16,46,.2) 58%, rgba
   .promise-row .icon { width: 40px; height: 40px; }
 
   .section-head p { font-size: 1.0625rem; }
-  .benefits { gap: 10px; }
-  .benefits li { grid-template-columns: 1fr; padding: 16px 14px; row-gap: 10px; }
-  .b-icon { grid-row: auto; width: 42px; height: 42px; }
-  .b-icon .icon { width: 23px; height: 23px; }
+  .benefits { grid-template-columns: 1fr; gap: 8px; }
+  .benefits li { grid-template-columns: 40px 1fr; column-gap: 14px; padding: 14px 16px; align-items: center; }
+  .b-icon { width: 40px; height: 40px; }
+  .b-icon .icon { width: 22px; height: 22px; }
   .benefits h3 { font-size: .8125rem; padding-top: 0; }
-  .benefits p { margin-top: -4px; font-size: .875rem; }
+  .benefits p { margin-top: 1px; font-size: .9375rem; line-height: 1.4; }
 
   /* Steps: vertical rail */
   .timeline { --dot: 56px; grid-template-columns: 1fr; row-gap: 26px; }
