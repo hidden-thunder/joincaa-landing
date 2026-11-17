@@ -71,15 +71,27 @@ This is the original production page made right. It keeps what the client alread
 Only the application card and buttons are lifted: card `0 2px 6px rgba(0,0,0,.18), 0 24px 48px -16px rgba(0,0,0,.55)`; red buttons carry a soft red-tinted drop.
 
 ## Components
-- **Application card** (`#apply.apply-card`): white, 8px radius, 5px red top border, boxed inputs (4px radius) with navy focus ring; email and phone share a row on desktop.
-- **Checks**: white text with red discs holding a white check.
-- **Hero strip**: the original floating "You don't need experience" card, turned into a centered band at the foot of the hero.
+- **Application card** (`#apply.apply-card`): white, 8px radius, 5px red top border, boxed inputs (4px radius) with navy focus ring; email and phone share a row on desktop. "Takes less than a minute." sits in a pale-red pill with a timer icon.
+- **Perks** (`.perks`): four quick facts in the hero, each a translucent tile with a red icon square; 2×2 on desktop, a 4-up icon row on phones so the offer reads before the form.
+- **Promise row** (`.promise`): the "You don't need experience…" sentence as a three-step equation (no experience → we train → you build the future) with outlined icons and chevrons; the last step is red. The full sentence stays in an `.sr-only` paragraph.
+- **Benefit tiles** (`.benefits`): white tiles on gray-50, pale-red icon square, uppercase term, one short line with the key phrase in navy bold. 3 columns desktop, 2 on phones.
+- **Steps** (`.timeline`): red icon dots with a navy number badge on a 4px line that fills as it scrolls in; vertical rail on phones. Step 1 links to the form ("Start now").
+- **`mark`**: a low red highlighter stroke for one key phrase per section.
 - **Success**: red disc with a white check, "Thank you!" in Montserrat 900.
 
+## Icons
+Lucide paths in the inline sprite (ISC), 2px stroke, round caps: check, arrow, lock, alert, cash, clock, cap, growth, team, heart, newbie, form, chat, board, timer.
+
+## Copy
+Client round 2 (2026-11-17): every block is summarized to one short line; no new facts were added. Key phrases are bold or `mark`ed so the page can be understood without reading full sentences.
+
 ## Motion
-One moment: the two headline lines wipe in from the left (clip-path, 0.9s expo-out, second line delayed 120ms). Off under `prefers-reduced-motion`.
+- The two headline lines wipe in from the left (clip-path, 0.9s expo-out); the perks rise in after them.
+- `js/ui.js` adds `html.has-reveal` and reveals on scroll: benefit tiles rise in with a stagger, and the steps line fills while the dots pop in one after another.
+- Without JS or with `prefers-reduced-motion`, everything is simply visible.
 
 ## Do's and Don'ts
-- Don't bring back stars, dashes beside titles, cyan, icon circles or a stock photo.
-- Don't use colored side borders; the red accents are top borders, ticks and dots.
-- Do keep red-on-navy for large text only.
+- Don't bring back stars, dashes beside titles, cyan or a stock photo; real team photos would be welcome if the client supplies them.
+- Don't use colored side borders; the red accents are top borders, icon squares and dots.
+- Do keep red-on-navy for large or bold text only.
+- Do keep each benefit and step to one line on a phone.
